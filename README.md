@@ -10,6 +10,17 @@
 - Mac 프로에서 설치시 '확인되지 않은 개발자'로 나오면서 설치가 되지 않는다면 사과 > 시스템설정 > 개인정보 보호 및 보안 > 보안 : App Store 로 바꿔서 실행하세요
 
 - ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" ``` 
-- 위의 내용을 실행하고 비번과 계속하려면 Enter를 입력하라고 나옵니다. Enter를 하고 잠시기다리면  "Next steps:"라고 하면서 터미널에서 2개의 명령어를 실행하여 PATH에 추가하라고 합니다. 이것까지 실행하고 난 뒤에 3번으로 넘어가시면 됩니다. 
+- 위의 내용을 실행하고 비번과 계속하려면 Enter를 입력하라고 나옵니다. Enter를 하고 잠시기다리면  "Next steps:"라고 하면서 터미널에서 2개의 명령어를 실행하여 PATH에 추가하라고 합니다.  
+이 부분이 잘 해야 합니다. 이미 터미널창에 있을 것입니다. 그곳에서 ``` vi ~/.zshrc  ``` 엔터   
+그럼 vi편집기로 넘어갑니다  당황하지말고 알파벳  ```  e ```  편집명령을 줍니다. 혹시 삽입을 할때는 ```i ```를 사용합니다  
+그리고 비슷한 path 가 있는 부분을 찾아 그곳에 공간을 만들고    
+```    
+HOMEBREW_HOME = /opt/homebrew
+MYSQL_HOME = /usr/local/mysql
+export PATH=${PATH}:${HOMEBREW_HOME}/bin:${MYSQL_HOME}/bin
+```  
+을 입력합니다. esc를 한번 클릭하고 ``` :wq ```를 연달아 누릅니다. 그럼 저장하고 빠져나오게 됩니다.  
+
+- 잘 되었는지 확인하기위해 
 - brew tap mongodb/brew
 - brew install mongodb-community

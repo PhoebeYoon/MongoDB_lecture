@@ -48,7 +48,7 @@ https://www.mongodb.com/try/download/compass   다운로드 후 어플리케이�
 2. 
 <img width="375" alt="스크린샷 2023-03-23 오후 10 28 52" src="https://user-images.githubusercontent.com/48478079/227219118-48ec5985-5833-4edb-9eae-b0fc31198816.png">   
 
-3. 📁books > "ADD DATA" 클릭 > "Insert Document" 선택 > 이미 삽입되어 있는 id를 삭제합니다. 삭제해도 나중에 삽입됩니다. > 아래의 내용을 삽입합니다.  
+3. 📁books > "ADD DATA" 클릭 > "Insert Document" 선택 > 이미 삽입되어 있는 id를 삭제합니다.(삭제해도 나중에 삽입됩니다.) > 아래의 내용을 삽입합니다.  
 
 ```
 {

@@ -15,12 +15,14 @@
 그럼 vi편집기로 넘어갑니다  당황하지말고 알파벳  ```  e ```  편집명령을 줍니다. 혹시 삽입을 할때는 ```i ```를 사용합니다  
 그리고 비슷한 path 가 있는 부분을 찾아 그곳에 공간을 만들고    
 ```    
-HOMEBREW_HOME = /opt/homebrew
+HOMEBREW_HOME = 여기에 터미널창에 나온 경로를 적어줍니다
 MYSQL_HOME = /usr/local/mysql
 export PATH=${PATH}:${HOMEBREW_HOME}/bin:${MYSQL_HOME}/bin
 ```  
 을 입력합니다. esc를 한번 클릭하고 ``` :wq ```를 연달아 누릅니다. 그럼 저장하고 빠져나오게 됩니다.  
 
-- 잘 되었는지 확인하기위해 
-- brew tap mongodb/brew
-- brew install mongodb-community
+- 잘 되었는지 확인하기위해 ``` brew -v ```  숫자가 나오면 잘 된것입니다. 이제 mongoDB를 설치하도록 하겠습니다. 
+1. brew tap mongodb/brew
+2. brew install mongodb-community    
+3. mongosh 엔터   
+실행되면 검정화면에 노란색 줄무늬와 함께 ``` test> ``` 가 나옵니다 

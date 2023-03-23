@@ -16,3 +16,12 @@
 
 <img width="500" alt="스크린샷 2023-03-23 오후 3 03 15" src="https://user-images.githubusercontent.com/48478079/227118618-f2e757fc-383c-4803-9361-cb59d96358e6.png">    
 <img width="170" alt="스크린샷 2023-03-23 오후 3 09 47" src="https://user-images.githubusercontent.com/48478079/227118669-731a6fe9-5360-4ddf-8cfb-54507a279c02.png">
+
+
+## JSON 표기법
+- 각 객체는 {  } (중괄호)로 시작하고 끝난다.
+- 문자열과 값으로 구성되어 있고 콜론(:)으로 구분한다
+- 각 멤버는 콤마(,)로 구분
+- 값으로는 object, string, number, array, boolearn, null 사용
+- 문자는 따옴표를 사용하여 표기
+- 배열은 [  ] (대괄호)로 시작

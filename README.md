@@ -35,6 +35,7 @@ https://www.mongodb.com/try/download/compass   다운로드 후 어플리케이�
 
 <img width="315" alt="스크린샷 2023-03-23 오후 10 18 05" src="https://user-images.githubusercontent.com/48478079/227216244-6ca4fc6c-cbd0-4bb0-bbdc-1f7ac3c6a935.png">
 
-
+녹색의 connet 버튼 클릭  
+<img width="349" alt="스크린샷 2023-03-23 오후 10 22 46" src="https://user-images.githubusercontent.com/48478079/227217406-eaf35754-7e44-4788-b504-bbbca8e6bbff.png">
 
  

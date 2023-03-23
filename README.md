@@ -16,3 +16,31 @@ Document는 동적인 스키마를 가지고 있습니다.
 ## 설치방법
 MongoDB 공식 홈페이지의 다운로드 페이지에서 MSI 파일로 설치하면
 C:\Program Files\MongoDB\Server\3.2\bin\ 에 설치됩니다.
+
+
+## 수업은 이렇게 진행되요
+1. MongoDB는 뭔가요
+2. MongoDB 설치하기
+3. Collection & Documents
+4. Using MongoDB compass
+5. MongoDB 셀 이용하기
+6. 새 Document 추가하기
+7. Finding Documents
+8. Sorting & Limiting Data
+9. Nested Documents
+10. Operator & Complex Queries
+11. Using $in & $nin
+12. Quering Arrays
+13. Deleting Documents
+14. Updating Documents
+15. MongoDB Drivers
+16. MongoDB 연결하기
+17. Cursors & Fetching Data
+18. Finding Single Documents
+19. Using POSTMAN
+20. Handing POST Requests
+21. Handling DELETE Requests
+22. PATCH Requests
+23. Pagination
+24. Index
+25. MongoDB Atlas

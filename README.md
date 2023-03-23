@@ -26,3 +26,4 @@ export PATH=${PATH}:${HOMEBREW_HOME}/bin:${MYSQL_HOME}/bin
 2. brew install mongodb-community    
 3. mongosh 엔터   
 실행되면 검정화면에 노란색 줄무늬와 함께 ``` test> ``` 가 나옵니다 
+<img width="273" alt="스크린샷 2023-03-23 오후 9 45 28" src="https://user-images.githubusercontent.com/48478079/227207744-7ee146d5-628c-44e5-af66-8d9f3ea17aad.png">

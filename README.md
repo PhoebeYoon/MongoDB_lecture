@@ -20,8 +20,37 @@
 - os의 메모리를 활용하기 때문에 메모리가 차면 하드디스크로 데이터처리를 하여 속도가 급격히 느려지나
 
 
-<img width="500" alt="스크린샷 2023-03-23 오후 3 03 15" src="https://user-images.githubusercontent.com/48478079/227118618-f2e757fc-383c-4803-9361-cb59d96358e6.png">    
-<img width="170" alt="스크린샷 2023-03-23 오후 3 09 47" src="https://user-images.githubusercontent.com/48478079/227118669-731a6fe9-5360-4ddf-8cfb-54507a279c02.png">
+<img width="500" alt="스크린샷 2023-03-23 오후 3 03 15" src="https://user-images.githubusercontent.com/48478079/227118618-f2e757fc-383c-4803-9361-cb59d96358e6.png">      
+
+간단한 document의 구조를 아래와 같다.  
+``` 
+{
+   _id: ObjectId(7df78ad8902c)
+   title: 'MongoDB Overview', 
+   description: 'MongoDB is no sql database',
+   by: 'tutorials point',
+   url: 'http://www.tutorialspoint.com',
+   tags: ['mongodb', 'database', 'NoSQL'],
+   likes: 100, 
+   comments: [	
+      {
+         user:'user1',
+         message: 'My first comment',
+         dateCreated: new Date(2011,1,20,2,15),
+         like: 0 
+      },
+      {
+         user:'user2',
+         message: 'My second comments',
+         dateCreated: new Date(2011,1,25,7,45),
+         like: 5
+      }
+   ]
+}
+
+```  
+
+
 
 
 ## JSON 표기법

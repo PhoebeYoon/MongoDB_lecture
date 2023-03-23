@@ -39,7 +39,7 @@ https://www.mongodb.com/try/download/compass   다운로드 후 어플리케이�
 <img width="349" alt="스크린샷 2023-03-23 오후 10 22 46" src="https://user-images.githubusercontent.com/48478079/227217406-eaf35754-7e44-4788-b504-bbbca8e6bbff.png">
 
  
-이렇게 나오지 않는다면 메뉴에서 'Services > MondoDB server를 찾아 실행중인지 확인 '   
+이렇게 나오지 않는다면 메뉴에서 (윈도우 경우) 'Services > MondoDB server를 찾아 실행중인지 확인 '   
 
 ## database 만들어보기  
 1. 
@@ -60,7 +60,7 @@ https://www.mongodb.com/try/download/compass   다운로드 후 어플리케이�
 "rating":9
 }
 ```   
-insert 버튼클릭  
+4. insert 버튼클릭  
 
 <img width="246" alt="스크린샷 2023-03-23 오후 10 38 03" src="https://user-images.githubusercontent.com/48478079/227221306-d5c0631a-362d-4241-89f8-5d419ec6e03f.png"> 
 id가 자동으로 삽입되어 있습니다.   

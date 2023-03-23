@@ -1,46 +1,17 @@
 ###### :cactus:  MongoDB_lecture
 
-MongoDB는 C++로 만들어진 Document-Oriented Cross-platform Database입니다.  이것은 Not Only Sql중의 하나로 기존의 RDBMS의 한계를 극복하기 위해 만들어진 새로운 형태의 데이터저장소입니다. 관계형 DB가 아니기 때문에 RDBMS처럼 고정된 스키마마 join이 존재하지 않습니다.
-
-여기에 말하는 Document는 우리가 흔히 생각하는 워드나 엑셀에서 사용되는 것을 말하는 것이 아니라 RDBMS의 레코드와 비슷한 개념으로 key-value쌍으로 이루어져 있습니다 
-
-MongoDB에는 12bytes의 hexadecimal값으로 이루어진 _id가 자동으로 생성되며 각 document에서 유일한 값을 가지고 있습니다.
-12bytes 중 timestamp로4byes, machine id로 3byte, MongoDB서버의 프로세스 id로 2bytes, 나머지 3bytes는 순차번호입니다. 이것은 레코드가 생성될때마다 값이 높아지는 것입니다.  
-
-
-Collection는 MongoDB Document의 그룹입니다. Document들이 Collection내부에 위치하고 있습니다. Database는 Collection들의 물리적인 컨테이너입니다. Database는 파일시스템에 여러파일
-Document는 동적인 스키마를 가지고 있습니다.
-
-
-
-## 설치방법
-MongoDB 공식 홈페이지의 다운로드 페이지에서 MSI 파일로 설치하면
-C:\Program Files\MongoDB\Server\3.2\bin\ 에 설치됩니다.
+## MongoDB 특징
+1. key-value
+2. 스키마를 고정하지 않은 형테로 스키마 변경으로 오는 문제가 없고, 데이터를 구조화하여 json 형태로 저장
+3. join이 불가능하기 때문에 join이 필요없도록 데이터 설계
+4. 메모리맵 형태의 파일엔진 db이기 때문에 메모리에 의존적으로 메모리 크기가 성능을 좌우한다.
+5. 로그데이터, 이벤트 참여내역, 세션들 쌓아놓고 삭제가 없는 경웨 적합, 트랜잭션이 중요한 금융, 결제, 회원정보등에는 부적합
+6. Document 데이터모델은 속성과 값의 쌍으로 이루어져 있기 때문에 하나의 document에 필요한 정보를 모두 담아야 한다. 
+7. 속성은 문자열, 숫자, 날짜, 배열, 다른 Document도 가능
+8. one query로 모두 해결되게끔 collection model 설계
+9. join이 불가능하므로 미리 embedding 시켜야 한다.   
 
 
-## 수업은 이렇게 진행되요
-1. MongoDB는 뭔가요
-2. MongoDB 설치하기
-3. Collection & Documents
-4. Using MongoDB compass
-5. MongoDB 셀 이용하기
-6. 새 Document 추가하기
-7. Finding Documents
-8. Sorting & Limiting Data
-9. Nested Documents
-10. Operator & Complex Queries
-11. Using $in & $nin
-12. Quering Arrays
-13. Deleting Documents
-14. Updating Documents
-15. MongoDB Drivers
-16. MongoDB 연결하기
-17. Cursors & Fetching Data
-18. Finding Single Documents
-19. Using POSTMAN
-20. Handing POST Requests
-21. Handling DELETE Requests
-22. PATCH Requests
-23. Pagination
-24. Index
-25. MongoDB Atlas
+
+<img width="500" alt="스크린샷 2023-03-23 오후 3 03 15" src="https://user-images.githubusercontent.com/48478079/227118618-f2e757fc-383c-4803-9361-cb59d96358e6.png">    
+<img width="170" alt="스크린샷 2023-03-23 오후 3 09 47" src="https://user-images.githubusercontent.com/48478079/227118669-731a6fe9-5360-4ddf-8cfb-54507a279c02.png">

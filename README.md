@@ -29,3 +29,12 @@
   "body":"lorem lorem"
 }
 ``` 
+
+## MongoDB compass 설치하기 
+https://www.mongodb.com/try/download/compass   다운로드 후 어플리케이션으로 이동하고 실행합니다. 
+
+<img width="315" alt="스크린샷 2023-03-23 오후 10 18 05" src="https://user-images.githubusercontent.com/48478079/227216244-6ca4fc6c-cbd0-4bb0-bbdc-1f7ac3c6a935.png">
+
+
+
+ 

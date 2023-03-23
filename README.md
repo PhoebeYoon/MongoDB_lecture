@@ -49,8 +49,10 @@
 }
 
 ```  
-MongoDB에는 12bytes의 hexadecimal값으로 이루어진 _id가 자동으로 생성되며 각 document에서 유일한 값을 가지고 있습니다.
+- MongoDB에는 12bytes의 hexadecimal값으로 이루어진 _id가 자동으로 생성되며 각 document에서 유일한 값을 가지고 있습니다.
 12bytes 중 timestamp로4byes, machine id로 3byte, MongoDB서버의 프로세스 id로 2bytes, 나머지 3bytes는 순차번호입니다. 이것은 레코드가 생성될때마다 값이 높아지는 것입니다.  
+- MongoDB안의 데이터베이스는 the physical container of the data. Then, in a single MongoDB server, multiple database are available, and each database has a file system and set of files in it. 
+- Collection in MongoDB는 databased document의 그룹이다. RDBMS의 table과 비교될 수 있지만 collection에는 스키마 구조가 없다.  MongoDB는 같은 document에 다른 fields를 가질 수 있지만 같은 collection안에 있는 documents는 같은 목적를 제공하기 위해 저장되었다.
 
 Collection은 table, Document는 row, field는 column과 같다.
 

@@ -59,7 +59,10 @@ https://www.mongodb.com/try/download/compass   다운로드 후 어플리케이�
 "genres":["fantasy","magical"],
 "rating":9
 }
-```
+```   
+insert 버튼클릭  
 
+<img width="246" alt="스크린샷 2023-03-23 오후 10 38 03" src="https://user-images.githubusercontent.com/48478079/227221306-d5c0631a-362d-4241-89f8-5d419ec6e03f.png"> 
+id가 자동으로 삽입되어 있습니다.   
 
 

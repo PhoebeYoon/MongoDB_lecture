@@ -53,6 +53,74 @@ MongoDB에는 12bytes의 hexadecimal값으로 이루어진 _id가 자동으로 �
 12bytes 중 timestamp로4byes, machine id로 3byte, MongoDB서버의 프로세스 id로 2bytes, 나머지 3bytes는 순차번호입니다. 이것은 레코드가 생성될때마다 값이 높아지는 것입니다.  
 
 
+## MongoDB는 embedded 데이터모델과 정규화데이터모델의 2가지 유형의 데이터 모델을 제공한다. 
+1. embedded 모델은 관련데이터를 하나의 문서에 모두 포함하는 형태로 비정규화된 데이터 모형이다.
+``` 
+{
+	_id: ,
+	Emp_ID: "10025AE336"
+	Personal_details:{
+		First_Name: "Radhika",
+		Last_Name: "Sharma",
+		Date_Of_Birth: "1995-09-26"
+	},
+	Contact: {
+		e-mail: "radhika_sharma.123@gmail.com",
+		phone: "9848022338"
+	},
+	Address: {
+		city: "Hyderabad",
+		Area: "Madapur",
+		State: "Telangana"
+	}
+}
+```
+
+2. 정규화데이터모델
+이 모델에서는 참조를 사용하여 원본 문서의 하위문서를 참조한다. 예를들면, 앞의 문서을 아래와 같이 할 수도 있다. 
+ 
+Employee:
+
+```
+{
+	_id: <ObjectId101>,
+	Emp_ID: "10025AE336"
+}
+```   
+
+Personal_details:    
+```
+{
+	_id: <ObjectId102>,
+	empDocID: " ObjectId101",
+	First_Name: "Radhika",
+	Last_Name: "Sharma",
+	Date_Of_Birth: "1995-09-26"
+}
+```    
+Contact:   
+ ``` 
+ {
+	_id: <ObjectId103>,
+	empDocID: " ObjectId101",
+	e-mail: "radhika_sharma.123@gmail.com",
+	phone: "9848022338"
+}
+```   
+
+Address:      
+```   
+   {
+	_id: <ObjectId104>,
+	empDocID: " ObjectId101",
+	city: "Hyderabad",
+	Area: "Madapur",
+	State: "Telangana"
+}
+``` 
+
+
+
 
 ## JSON 표기법
 - 각 객체는 {  } (중괄호)로 시작하고 끝난다.

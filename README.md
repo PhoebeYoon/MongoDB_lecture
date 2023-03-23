@@ -16,6 +16,8 @@ Document는 동적인 스키마를 가지고 있습니다.
 MongoDB 공식 홈페이지의 다운로드 페이지에서 MSI 파일로 설치하면
 C:\Program Files\MongoDB\Server\3.2\bin\ 에 설치됩니다.
 
+## Before you start 
+이 과정은 프로그래밍 언어를 알고 있어야 가능합니다. 그리고 json에 대해 학습을 한후에 이 과정을 하실 것을 권장합니다 
 
 ## 수업은 이렇게 진행되요
 1. MongoDB는 뭔가요

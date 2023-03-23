@@ -13,3 +13,19 @@
 }
 ```    
 빨간색 테두리안에 있는 것을 document(문서)라고 하고  Documents는 json 처럼 key와 value로 되어 있지만 실제는 bson이라고 부르는 binary json으로 저장되어 있습니다 
+그리고 document에는 특별한 ``` _id : ObjectId("ai51eg8H9Pk12")``` 가 있다고 앞의 수업에서 언급했습니다.  이 id로 인해 모든 문서는 분별될 수 있고 유일해집니다 
+문서는 속성가 가질 수 있는 속성에는 또한 문서를 속성으로 가질 수 있습니다 이것은 nested document라고 부릅니다.
+
+``` json
+{
+  "title": "My first blog post",
+  "author" : {
+    "name" :"Hong",
+    "email" :"hong@naver.com",
+    "role" :"game reviewer"
+   },
+  "tags":["video games","reviews"],
+  "likes" : 20,
+  "body":"lorem lorem"
+}
+``` 

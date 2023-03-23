@@ -41,3 +41,17 @@ https://www.mongodb.com/try/download/compass   다운로드 후 어플리케이�
  
 이렇게 나오지 않는다면 메뉴에서 'Services > MondoDB server를 찾아 실행중인지 확인 '   
 
+## database 만들어보기  
+1. 
+<img width="251" alt="스크린샷 2023-03-23 오후 10 28 34" src="https://user-images.githubusercontent.com/48478079/227219065-8616ab9e-636c-4e57-9bc8-c27c233aecf1.png">   
+
+2. 
+<img width="375" alt="스크린샷 2023-03-23 오후 10 28 52" src="https://user-images.githubusercontent.com/48478079/227219118-48ec5985-5833-4edb-9eae-b0fc31198816.png">   
+
+
+
+
+
+
+
+

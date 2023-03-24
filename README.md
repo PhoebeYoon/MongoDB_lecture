@@ -53,5 +53,9 @@ bookstore> db.authors.insertOne({name:'Hong', age : 30})
 이렇게하고 compass 확인해보면 새로운 collection이 만들어져 있습니다. compass에서 보이지 않는다면 refresh를 하면 됩니다.  
 <img width="200" alt="스크린샷 2023-03-24 오전 11 43 17" src="https://user-images.githubusercontent.com/48478079/227410999-bb1341c7-726d-42f3-bd3e-b9f5fe7fd979.png">
 
+이제 실습을 위해 삭제해 보도록 하겠습니다. 문서를 삭제할때는 'delete' 이고 collectio를 삭제할때는 'drop' 이라는 명령입니다. 
+
+<img width="445" alt="스크린샷 2023-03-24 오전 11 45 56" src="https://user-images.githubusercontent.com/48478079/227411328-8339e004-80b0-45e6-b492-3054db566715.png">
 
 
+<img width="200" alt="스크린샷 2023-03-24 오전 11 46 06" src="https://user-images.githubusercontent.com/48478079/227411319-07517b80-187c-4c35-aa95-364517bb4ece.png">

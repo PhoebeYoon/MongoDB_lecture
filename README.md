@@ -51,7 +51,15 @@ genres에 "fantasy"가 포함되어 있는 모든 것을 검색
 bookstore> db.books.find({genres:{$all: ["fantasy"]} })
 bookstore> db.books.find({genres:{$all: ["fantasy","fairy tale"]} })
 ```
-위의 문장에서 "bookstore> db.books.find({genres:{$all: ["fantasy","fairy tale (공백)"]} })" 을 넣으면 검색되지 않으니 주의하세요 
+위의 문장에서 "bookstore> db.books.find({genres:{$all: ["fantasy","fairy tale (공백)"]} })" 을 넣으면 검색되지 않으니 주의하세요  
+ 
+## document안에 document형식으로 들어있는 것들 검색
+- books 안에 reviews는 다시 document형식으로 되어있다. 이 reviews안에 있는 name속성으로 검색을 해봅시다. 자바스크립트에서 객체를 접속할때 (.) dot 연산자를 사용한다는 것을 기억하고 다음과 같이 입력해봅시다.  (속성의 이름은 quotation으로 감싸야 합니다 )
+```
+bookstore> db.books.find({ rating:7 } ) 
+bookstore> db.books.find({ "reviews.name" : "kim" })
+```
+위에서 첫째줄은 quotation으로 감싸지 않아도 되지만 아랫줄은 quotation으로 감싸야합니다.   
 
 
 

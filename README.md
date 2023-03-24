@@ -27,7 +27,8 @@ bookstore> db.books.updateMany({author:"Terry Pratchett"}, {$set: {author:"Terry
 ```  
 ' matchedCount: 2 ' 가 출력된다면 2개의 문서를 바꾼것이다.  
 
-MongoDB에서 문서의 부분적인 변경을 할때 효율적으로 수행할 수 있는 제한자는 아래와 같습니다.  
+
+### MongoDB에서 문서의 부분적인 변경을 할때 효율적으로 수행할 수 있는 Field Update Operator는 아래와 같습니다.  
 |명령어 | 설명 | 
 |---|---|
 |$set | document에서 특정 키의 값을 수정합니다. 특정 키가 존재하지 않다면 새롭게 생성합니다.특정 키의 데이터형도 수정할 수 있습니다 |
@@ -40,5 +41,15 @@ MongoDB에서 문서의 부분적인 변경을 할때 효율적으로 수행할 
 |$pop | 배열을 스택이나 큐처럼 활용할 수 있습니다 |
 
 
+### $inc 
+```
+bookstore> db.books.find({author:"Terry Pratchet"})
+bookstore> db.books.updateOne({author:"Terry Pratchet"},{$inc:{pages: 1}})
+```
+<img width="324" alt="스크린샷 2023-03-24 오후 7 29 27" src="https://user-images.githubusercontent.com/48478079/227497973-01e61f93-9ea5-404d-941e-1fae4972cebf.png">
+
+find() 명령의 결과로 2개의 출력결과를 얻는데 2번째 명령을 실행하면 그 2개의 결과중에서 첫번째것에 숫자가 1 증가합니다. 
+
+<img width="324" alt="스크린샷 2023-03-24 오후 7 32 35" src="https://user-images.githubusercontent.com/48478079/227498230-d42226fc-764b-4926-9208-abc922a65ae0.png">   
 
 

@@ -17,3 +17,7 @@ Export collection 클릭
 ## import data  
 첨부된 book2.json 파일을 import 해봅시다.   
 <img width="257" alt="스크린샷 2023-03-24 오후 6 37 31" src="https://user-images.githubusercontent.com/48478079/227482842-66c0120f-dc17-4eea-a623-e383fda0e327.png">
+
+## shell 에서 document 삭제
+``` bookstore> db.books.deleteOne({_id: ObjectId("641d434ea0139faf66b2f99b") } ) ```    
+id값은 기존내용중 아무거나 선택해서 사용합니다. 

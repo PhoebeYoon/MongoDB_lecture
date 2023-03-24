@@ -14,4 +14,6 @@ Export collection 클릭
 
 3.``` Export File Type ``` 에서 ``` JSON | CSV ``` 중 하나를 선택하면 됩니다. 우리는 ```JSON```를 선택하고 ``` Select a file...```  에서 저장할 위치를 지정하고 ``` Export ```를 클릭합니다. 
 
-
+## import data  
+첨부된 book2.json 파일을 import 해봅시다.   
+<img width="257" alt="스크린샷 2023-03-24 오후 6 37 31" src="https://user-images.githubusercontent.com/48478079/227482842-66c0120f-dc17-4eea-a623-e383fda0e327.png">

@@ -63,7 +63,7 @@ bookstore> db.authors.insertOne({name:'Hong', age : 30})
 collection를 삭제할때는 gitHub처럼 이름을 다시 한번 입력해야 삭제됩니다.
 
 2. 여러개의 데이터 입력하기    
-``` json
+``` 
 bookstore> db.books.insertMany([{ "title": "The Light Fantastic", "author": "Terry Pratchett", 
 "pages": 250,"genres": [ "fantasy" ], "rating":6 }, 
 {"title": "Dune","author": "Frank Herbert", "pages": 500,"genres": ["sci-sf","dystopian"],
@@ -72,4 +72,4 @@ bookstore> db.books.insertMany([{ "title": "The Light Fantastic", "author": "Ter
 이렇게 입력하면   
 
 <img width="282" alt="스크린샷 2023-03-24 오후 12 05 44" src="https://user-images.githubusercontent.com/48478079/227413989-d032691b-eabc-4e33-817f-50613957326e.png">
-입력이 잘 되었다는 의미로 acknowledged :true가 나오면 id 값이 생성됩니다.  
+입력이 잘 되었다는 의미로 acknowledged :true가 나오고 id 값이 자동생성됩니다.  

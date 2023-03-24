@@ -35,7 +35,7 @@ app.get("/books",(req,res) =>{
  
 ## MongoDB 연결하기
 [db.js]
-```
+``` js
 const { MongoClient} = require('mongodb')
 let dbConnetion
 module.exports = {

@@ -72,10 +72,11 @@ genres에 "fantasy"가 추가되어있습니다.
 
 ### each  
 push로 genres 값을 한개 추가하는 대신에 $each를 사용해서 여러개 추가할 수 있다. 
-````
+```
 bookstore> db.books.updateOne({_id:ObjectId("641d6f9c12e5a0ec4283ac9a") }, 
 {$push: {genres: { $each:["sf","sci-sf" ]} }}
-```
+```  
 
+<img width="341" alt="스크린샷 2023-03-24 오후 8 06 03" src="https://user-images.githubusercontent.com/48478079/227505246-a833dd59-9ff6-4ef0-9a22-bdfa55f70d6e.png">
 
 

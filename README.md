@@ -62,6 +62,8 @@ https://www.mongodb.com/try/download/compass   다운로드 후 어플리케이�
 4. insert 버튼클릭  
 
 <img width="246" alt="스크린샷 2023-03-23 오후 10 38 03" src="https://user-images.githubusercontent.com/48478079/227221306-d5c0631a-362d-4241-89f8-5d419ec6e03f.png"> 
-id가 자동으로 삽입되어 있습니다.   
+id가 자동으로 삽입되어 있습니다.    
+
+
 
 > 여러개의 데이타를 삽입할 수 있는데 이때는 "Insert Document" 팝업창안에 내용을 삭제한 뒤  [  ] (대괄호)를 먼저 삽입하고 그 안에 { },{ } 식으로 넣어줍니다 

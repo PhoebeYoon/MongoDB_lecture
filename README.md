@@ -63,4 +63,12 @@ bookstore> db.books.updateOne({author:"Terry Pratchet"},{$inc:{pages: -11}})
 bookstore> db.books.updateOne({_id:ObjectId("641d72e412e5a0ec4283ac9e")}, {$pull: {genres:"fantasy"  }} )
 ```    
 결과를 확인해보면 그 genres 중 하나가 삭제된것을 확인합니다.   
+### $push 
+```
+bookstore> db.books.updateOne({_id:ObjectId("641d72e412e5a0ec4283ac9e")}, {$push: {genres:"fantasy"  }} )
+```    
+$pull에서 사용했던 명령어에서 pull 대신 push를 바꿔서 입력해봅니다. 
+
+
+
 

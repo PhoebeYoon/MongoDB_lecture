@@ -55,4 +55,12 @@ find() 명령의 결과로 2개의 출력결과를 얻는데 2번째 명령을 �
 
 ```
 bookstore> db.books.updateOne({author:"Terry Pratchet"},{$inc:{pages: -11}})
+```   
+
+### $pull  
+특정 필드를 검색해서 id와 genres값을 확인합니다. 그리고 pull에 그 genres값중 하나를 입력합니다.  
 ```
+bookstore> db.books.updateOne({_id:ObjectId("641d72e412e5a0ec4283ac9e")}, {$pull: {genres:"fantasy"  }} )
+```    
+결과를 확인해보면 그 genres 중 하나가 삭제된것을 확인합니다.   
+

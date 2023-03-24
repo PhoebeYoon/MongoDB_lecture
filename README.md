@@ -25,4 +25,20 @@ bookstore> db.books.updateOne({ _id:ObjectId("641d72e412e5a0ec4283ac9e")},  {$se
 bookstore> db.books.find({author:"Terry Pratchett"}) 
 bookstore> db.books.updateMany({author:"Terry Pratchett"}, {$set: {author:"Terry Pratchet"} })
 ```  
-' matchedCount: 2 ' 가 출력된다면 2개의 문서를 바꾼것이다. 
+' matchedCount: 2 ' 가 출력된다면 2개의 문서를 바꾼것이다.  
+
+MongoDB에서 문서의 부분적인 변경을 할때 효율적으로 수행할 수 있는 제한자는 아래와 같습니다.  
+|명령어 | 설명 | 
+|---|---|
+|$set | document에서 특정 키의 값을 수정합니다. 특정 키가 존재하지 않다면 새롭게 생성합니다.특정 키의 데이터형도 수정할 수 있습니다 |
+|$unset | document에서 특정 키와 값을 모두 제거합니다 |
+|$nc|  배열에 사용되는 제한자로써, 지정된 키가 존재하는지 확인할 수 있습니다. |
+|$inc | 이미 존재하는 키의 값을 수정하거나, 새로운 키를 생성합니다. $set과 비슷하지만 주로 값이 자주 변경되는 값을 수정하는데 사용됩니다. int, long, double 의 자료형에만 사용이 가능합니다|
+| $push | 배열에 사용되는 제한자로써, 지정된 키가 존재할 때 해당 키(배열)의 끝에 요소를 추가하며 지정된 키가 존재 하지 않으면 새로운 배열을 추가합니다.  |
+|$pull | 배열에 사용되는 제한자로써, 지정된 키에 대한 요소를 삭제합니다. |
+|$each | $addToSet과 함께 사용되는 제한자로써, 여러 개의 값을 중복되지 않게 배열에 추가합니다. |
+|$pop | 배열을 스택이나 큐처럼 활용할 수 있습니다 |
+
+
+
+

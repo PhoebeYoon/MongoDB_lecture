@@ -52,7 +52,6 @@ https://www.mongodb.com/try/download/compass   다운로드 후 어플리케이�
 
 ```
 {
-
 "title" :"Name of Wind",
 "author":"Patric Rothfus",
 "pages": 500,

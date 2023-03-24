@@ -50,5 +50,8 @@ MongoDB Compass를 실행해서 보면 지금 입력한 내용이 추가되어 �
 ```
 bookstore> db.authors.insertOne({name:'Hong', age : 30})
 ```   
-이렇게하고 compass 확인해보면 새로운 
+이렇게하고 compass 확인해보면 새로운 collection이 만들어져 있습니다. compass에서 보이지 않는다면 refresh를 하면 됩니다.  
+<img width="200" alt="스크린샷 2023-03-24 오전 11 43 17" src="https://user-images.githubusercontent.com/48478079/227410999-bb1341c7-726d-42f3-bd3e-b9f5fe7fd979.png">
+
+
 

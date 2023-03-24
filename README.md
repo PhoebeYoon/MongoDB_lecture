@@ -64,6 +64,6 @@ collection를 삭제할때는 gitHub처럼 이름을 다시 한번 입력해야 
 
 2. 여러개의 데이터 입력하기    
 ``` 
-bookstore> db.books.insertMany([{ "title": "The Light Fantastic", "author": "Terry Pratchett", "pages": 250,"genres": [ "fantasy" ], "rating":6 }, {"title": "Dune","author": "Frank Herbert", "pages": 500,"genres": ["sci-sf","dystopian"],"rating":10}   ])
+bookstore> db.books.insertMany([{ "title": "The Light Fantastic", "author": "Terry Pratchett", "pages": 250,"genres": [ "fantasy" ], "rating":6 }, {"title": "Dune","author": "Frank Herbert", "pages": 500,"genres": ["sci-sf","dystopian"],"rating":10} ])
 ```     
 

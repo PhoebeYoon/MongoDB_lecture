@@ -72,4 +72,5 @@ bookstore> db.books.insertMany([{ "title": "The Light Fantastic", "author": "Ter
 이렇게 입력하면   
 
 <img width="282" alt="스크린샷 2023-03-24 오후 12 05 44" src="https://user-images.githubusercontent.com/48478079/227413989-d032691b-eabc-4e33-817f-50613957326e.png">
-입력이 잘 되었다는 의미로 acknowledged :true가 나오고 id 값이 자동생성됩니다.  
+입력이 잘 되었다는 의미로 acknowledged :true가 나오고 id 값이 자동생성됩니다.   
+여기까지 잘 따라오셨다면 13개의 문서가 있을 것입니다. 

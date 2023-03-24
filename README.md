@@ -24,3 +24,4 @@ bookstore> db.books.find({ $or:[ {pages : {$lt:200} },{ pages:{$gt:800} } ]})
 bookstore> db.books.find({ $or:[ {pages : {$lt:200} },{ pages:{$gt:800} } ]}).count()
 ```
 
+## 배열에 사용하는 연산자들 ( $in, $nin )

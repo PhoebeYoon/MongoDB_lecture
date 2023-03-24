@@ -64,13 +64,21 @@ collection를 삭제할때는 gitHub처럼 이름을 다시 한번 입력해야 
 
 2. 여러개의 데이터 입력하기    
 ``` 
-bookstore> db.books.insertMany([{ "title": "The Light Fantastic", "author": "Terry Pratchett", 
-"pages": 250,"genres": [ "fantasy" ], "rating":6 }, 
-{"title": "Dune","author": "Frank Herbert", "pages": 500,"genres": ["sci-sf","dystopian"],
-"rating":10} ])
+bookstore> db.books.insertMany([{ "title": "The Light Fantastic", "author": "Terry Pratchett", "pages": 250,"genres": [ "fantasy" ], "rating":6 }, 
+{"title": "Dune","author": "Frank Herbert", "pages": 500,"genres": ["sci-sf","dystopian"],"rating":10} ])
 ```     
 이렇게 입력하면   
 
 <img width="282" alt="스크린샷 2023-03-24 오후 12 05 44" src="https://user-images.githubusercontent.com/48478079/227413989-d032691b-eabc-4e33-817f-50613957326e.png">
 입력이 잘 되었다는 의미로 acknowledged :true가 나오고 id 값이 자동생성됩니다.   
 여기까지 잘 따라오셨다면 13개의 문서가 있을 것입니다. 
+
+:cookie: shell 에서 아래와 같이 여러줄에 거쳐서 내용을 입력할 수도 있습니다. ... (점3개) 나온다는 것 미리 숙지하시고요. 여러개 입력하니까 대괄호 들어갑니다. 이거 빠뜨리면 ' MongoInvalidArgumentError: Argument "docs" must be an array of documents' 라고 에러메시지 나옵니다. 
+```
+bookstore> db.books.insertMany([ 엔터
+... { {"title": "Dune","author": "Frank Herbert", "pages": 500,"genres": ["sci-sf","dystopian"],"rating":10} ,
+...{ "title": "The Light Fantastic", "author": "Terry Pratchett", "pages": 250,"genres": [ "fantasy" ], "rating":6 }
+... ])
+```
+
+

@@ -2,7 +2,7 @@
 
 ## shell 를 이용하여 MongoDB의 명령어를 익혀봅시다
 
-이전수업에서 했던 MongoDB Compass 화면에서 하단의  ' _MONGOSH '에 마우스를 위치한 후 위로 클릭드래그하면 터미널처럼 보이는 검정색 화면이 나타납니다. 
+이전수업에서 했던 MongoDB Compass 화면에서 하단의  ' MONGOSH '에 마우스를 위치한 후 위로 클릭드래그하면 터미널처럼 보이는 검정색 화면이 나타납니다. 
 
 <img width="477" alt="스크린샷 2023-03-24 오전 11 07 22" src="https://user-images.githubusercontent.com/48478079/227406033-c9b0e7b7-bac2-451f-b947-aa67bb859ce0.png">
 
@@ -17,4 +17,11 @@ test> use mydb ( 심지어 존재하기 않는 데이터베이스 이름을 적�
 
 여기서도 같은 명령어를 시도해 봅니다. 결과는 동일합니다.   
 이렇게해서 우리는 3가지 방법으로 실행하는 것을 경험했습니다.   
-터미널창에서 'help' 입력하면 명령어에 대한 설명을 볼 수 있습니다.
+터미널창에서 'help' 입력하면 명령어에 대한 설명을 볼 수 있습니다. 'cls' 입력하면 터미널창 내용이 클리어됩니다. 
+
+- show dbs
+- use bookstroe
+- show collections
+- help
+- cls
+- exit ( compass 창이 아닌 일반 터미널에서 exit하면 mongosh 실행 후 나타났던 상태에서 빠저나가기가 됩니다 

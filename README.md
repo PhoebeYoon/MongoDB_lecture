@@ -79,6 +79,8 @@ bookstore> db.books.insertMany([ 엔터
 ... { {"title": "Dune","author": "Frank Herbert", "pages": 500,"genres": ["sci-sf","dystopian"],"rating":10} ,
 ...{ "title": "The Light Fantastic", "author": "Terry Pratchett", "pages": 250,"genres": [ "fantasy" ], "rating":6 }
 ... ])
-```
+```    
+데이터를 입력한 후에 MongoDB compass화면에서 Documents의 갯수에 차이가 나면 아래 이미지의 빨간 테두리안의 리플레시를 클릭합니다  
 
+<img width="277" alt="스크린샷 2023-03-24 오후 1 55 58" src="https://user-images.githubusercontent.com/48478079/227428477-adb0e512-f0b5-4137-a63c-99f7723e22b5.png">
 

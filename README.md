@@ -72,5 +72,9 @@ id가 자동으로 삽입되어 있습니다.
 입력후 데이타에 마우스를 올리면 아래와 같은 아이콘들이 나타납니다. 보시면 어떤것인지 알 수 있을 것입니다.   
 <img width="410" alt="스크린샷 2023-03-24 오전 10 37 58" src="https://user-images.githubusercontent.com/48478079/227402533-e8204f93-e8a0-4c9f-ad41-ad3e0396e1a6.png">
 
+### MongoDB compass에서 filter 사용하기  
 
+<img width="527" alt="스크린샷 2023-03-24 오전 10 40 04" src="https://user-images.githubusercontent.com/48478079/227402957-5ed2f37d-8280-4007-b784-1eabffe16dea.png">
 
+위의 이미지에서 ```Type a query: { field :'value' } ``` 부분에 원하는 쿼리를 입력합니다. 아래와 같이 한번 시도해 봅시다. 
+``` {rating:7} ```  한 개의 데이터가 검색됩니다.      

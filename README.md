@@ -50,6 +50,9 @@ bookstore> db.books.updateOne({author:"Terry Pratchet"},{$inc:{pages: 1}})
 
 find() 명령의 결과로 2개의 출력결과를 얻는데 2번째 명령을 실행하면 그 2개의 결과중에서 첫번째것에 숫자가 1 증가합니다. 
 
-<img width="324" alt="스크린샷 2023-03-24 오후 7 32 35" src="https://user-images.githubusercontent.com/48478079/227498230-d42226fc-764b-4926-9208-abc922a65ae0.png">   
+<img width="324" alt="스크린샷 2023-03-24 오후 7 32 35" src="https://user-images.githubusercontent.com/48478079/227498230-d42226fc-764b-4926-9208-abc922a65ae0.png">     
+마이너스값을 입력하면  감소시킬 수도 있습니다   
 
-
+```
+bookstore> db.books.updateOne({author:"Terry Pratchet"},{$inc:{pages: -11}})
+```

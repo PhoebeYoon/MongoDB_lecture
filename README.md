@@ -28,3 +28,11 @@ test> use mydb ( 심지어 존재하기 않는 데이터베이스 이름을 적�
 - exit ( compass 창이 아닌 일반 터미널에서 exit하면 mongosh 실행 후 나타났던 상태에서 빠저나가기가 됩니다 
 
 ## shell 를 이용하여 MongoDB의 명령어를 익혀봅시다
+터미널창에서 'mongosh' 엔터 
+```   
+test> show dbs
+use bookstore
+show collections
+db.books
+db.books.insertOne()
+```

@@ -36,6 +36,7 @@ show collections
 db.books
 db.books.insertOne({ title:"The Color of Magic", author:"Terry Pratchett", pages:300, rating:7, genres :["fantasy","magic"]  })
 ```     
+1. 한개의 데이터 입력하기   
 insertOne()는 하나의 데이터를 입력하겠다는 뜻입니다. 잘 입력되었다면  다음과 같이 출력됩니다. 
 ```
 {
@@ -60,3 +61,7 @@ bookstore> db.authors.insertOne({name:'Hong', age : 30})
 
 <img width="200" alt="스크린샷 2023-03-24 오전 11 46 06" src="https://user-images.githubusercontent.com/48478079/227411319-07517b80-187c-4c35-aa95-364517bb4ece.png">
 collection를 삭제할때는 gitHub처럼 이름을 다시 한번 입력해야 삭제됩니다.
+
+2. 여러개의 데이터 입력하기    
+bookstore> db.books.insertMany([ ])   
+

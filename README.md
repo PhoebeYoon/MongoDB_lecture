@@ -76,6 +76,7 @@ app.get("/books",(req,res) =>{
   res.json({msg : "welcome to the api"})
 })
 ```
+실행시, ``` nodemon app 엔터 ```  
 
 ## MongoDB에서 cursor란?
 - MongoDB에서 find() 메소드 실행후에 반환되는 문서의 MongoDB의 컬렉션입니다.

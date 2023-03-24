@@ -37,6 +37,47 @@
     "fiction"
   ],
   "rating": 9
+},
+{
+  "title": "The Secrets of Hartwood Hall",
+  "author": "Katie Lumsden",
+  "pages": 230,
+  "genres": [
+    "historical fiction",
+    "fiction"
+  ],
+  "rating":7
+},
+{
+  "title": "The Boy, The Mole, The Fox and The Horse",
+  "author": "Charlie Mackesy",
+  "pages": 128,
+  "genres": [
+    "fiction"
+  ],
+  "rating":8
+},
+{
+  "title": "Great Circle",
+  "author": "Maggie shipstead",
+  "pages": 390,
+  "genres": [
+    "action",
+    "adventure",
+    "fiction"
+  ],
+  "rating":8 
+},
+{
+  "title": "Outlander",
+  "author": "Diana Gabaldon",
+  "pages": 880,
+  "genres": [
+    "action",
+    "adventure"
+  ],
+  "rating":6 
 }
+
 
 

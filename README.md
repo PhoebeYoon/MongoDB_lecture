@@ -67,7 +67,27 @@ id가 자동으로 삽입되어 있습니다.
    
    
       
-✏️  여러개의 데이타를 삽입할 수 있는데 이때는 "Insert Document" 팝업창안에 내용을 삭제한 뒤  [  ] (대괄호)를 먼저 삽입하고 그 안에 { },{ } 식으로 넣어줍니다 
+✏️  여러개의 데이타를 삽입할 수 있는데 이때는 "Insert Document" 팝업창안에 내용을 삭제한 뒤  [  ] (대괄호)를 먼저 삽입하고 그 안에 { },{ } 식으로 넣어줍니다. json 형식대로 넣어줍니다. 
+
+```
+[
+ {
+   "title":"The Final Empire",
+   "author":"Brandon Sanderson",
+   "pages":450, 
+   "genres":["fantasy","dystopian"], 
+   "rating": 8
+ },
+{
+  "title":"The way of King" ,
+  "author":"Brandon Sanderson",
+  "pages":300,
+  "genres":["fantasy","dystopian"],
+  "rating":9
+} 
+ ]
+
+```
 
 입력후 데이타에 마우스를 올리면 아래와 같은 아이콘들이 나타납니다. 보시면 어떤것인지 알 수 있을 것입니다.   
 <img width="410" alt="스크린샷 2023-03-24 오전 10 37 58" src="https://user-images.githubusercontent.com/48478079/227402533-e8204f93-e8a0-4c9f-ad41-ad3e0396e1a6.png">

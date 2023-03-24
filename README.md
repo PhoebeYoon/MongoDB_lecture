@@ -19,11 +19,14 @@
   ``` 특정한 데이터만 검색, (위의 출력 중 id 값 중 하나를 선택하세요 ) ```
 - bookstore> db.books.find().count()
 ``` 참조되는 문서의 수를 셉니다 ```
-
-
-
-
-
+- bookstore> db.books.find({author:"Brandon Sanderson"}).count()
+- bookstore> db.books.find().limit(3) 
+``` 처음부터 3개가 출력됩니다 ```
+- bookstore> db.books.find().sort()
+- bookstore> db.books.find().sort({title:1})  ``` 기준을 넣고자 할때 sort({ 기준}) , 오름차순 ```
+- bookstore> db.books.find().sort({title:-1}) ``` 내림차순 ``` 
+- bookstore> db.books.find().sort({title:1}).limit(3) 
+- 
 
 
 

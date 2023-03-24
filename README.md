@@ -77,6 +77,11 @@ app.get("/books",(req,res) =>{
 })
 ```
 
+## MongoDB에서 cursor란?
+- MongoDB에서 find() 메소드 실행후에 반환되는 문서의 MongoDB의 컬렉션입니다.
+- 자동으로 반복실행합니다  
+- 이것은 특정 인덱스값을 가리키는 포인터와 같습니다.
+- find() 메소드후 반환되는 모든 문서가 가상 cursor에 저장됩니다.
 
 
 

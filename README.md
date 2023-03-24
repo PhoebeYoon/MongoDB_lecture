@@ -17,7 +17,8 @@
 ```( 모든 collection중에서 title, author만 출력해줍니다 )   ```
 - bookstore> db.books.findOne({_id:ObjectId("641d2b40a0139faf66b2f997")})    
   ``` 특정한 데이터만 검색, (위의 출력 중 id 값 중 하나를 선택하세요 ) ```
-
+- bookstore> db.books.find().count()
+``` 참조되는 문서의 수를 셉니다 ```
 
 
 

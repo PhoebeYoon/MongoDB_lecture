@@ -21,3 +21,5 @@ Export collection 클릭
 ## shell 에서 document 삭제
 ``` bookstore> db.books.deleteOne({_id: ObjectId("641d434ea0139faf66b2f99b") } ) ```    
 id값은 기존내용중 아무거나 선택해서 사용합니다. 
+만약 성공했다면, 
+``` { acknowledged: true, deletedCount: 1 } ``` 가 나옵니다. 

@@ -67,7 +67,8 @@ bookstore> db.books.updateOne({_id:ObjectId("641d72e412e5a0ec4283ac9e")}, {$pull
 ```
 bookstore> db.books.updateOne({_id:ObjectId("641d72e412e5a0ec4283ac9e")}, {$push: {genres:"fantasy"  }} )
 ```    
-$pull에서 사용했던 명령어에서 pull 대신 push를 바꿔서 입력해봅니다. 
+$pull에서 사용했던 명령어에서 pull 대신 push를 바꿔서 입력해봅니다.   
+genres에 "fantasy"가 추가되어있습니다.   
 
 
 

@@ -34,5 +34,15 @@ test> show dbs
 use bookstore
 show collections
 db.books
-db.books.insertOne()
+db.books.insertOne({ title:"The Color of Magic", author:"Terry Pratchett", pages:300, rating:7, genres :["fantasy","magic"]  })
+```     
+insertOne()는 하나의 데이터를 입력하겠다는 뜻입니다. 잘 입력되었다면  다음과 같이 출력됩니다. 
 ```
+{
+  acknowledged: true,
+  insertedId: ObjectId("641d0c33a0139faf66b2f990")
+}
+```    
+id는 자동으로 생성됩니다. 
+
+

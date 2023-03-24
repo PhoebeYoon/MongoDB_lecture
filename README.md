@@ -70,7 +70,7 @@ bookstore> db.books.updateOne({_id:ObjectId("641d72e412e5a0ec4283ac9e")}, {$push
 $pull에서 사용했던 명령어에서 pull 대신 push를 바꿔서 입력해봅니다.   
 genres에 "fantasy"가 추가되어있습니다.   
 
-### each  
+### $each  
 push로 genres 값을 한개 추가하는 대신에 $each를 사용해서 여러개 추가할 수 있다. 
 ```
 bookstore> db.books.updateOne({_id:ObjectId("641d6f9c12e5a0ec4283ac9a") }, 

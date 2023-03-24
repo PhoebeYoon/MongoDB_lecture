@@ -29,5 +29,7 @@ app.get("/books",(req,res) =>{
 9. ```nodemon app```  여기까지하면 터미널창에 위에서 [app.js]에서 작성한 내용중 "port 3000 작동중" 메시지가 나옵니다 
 10. 브라우저를 열고 url에 ``` http://localhost:3000/books ``` 접속합니다. 
 11. 그러면 [app.js] 에서 입력한 라우터의 메시지 '{"msg":"welcome to the api"}'가 브라우저에 나타나면 성공한 것입니다. 
-
+12. vs code의 터미널에서 다른 터미널창을 추가합니다. 여기에서 mongodb를 설치할 예정입니다.
+13. ``` npm install mongodb --save ```
+14. 설치후 package.json 파일에 "mongodb": "^5.1.0" 있을 것입니다. 
  

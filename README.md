@@ -24,6 +24,20 @@ bookstore> db.books.find({ $or:[ {pages : {$lt:200} },{ pages:{$gt:800} } ]})
 bookstore> db.books.find({ $or:[ {pages : {$lt:200} },{ pages:{$gt:800} } ]}).count()
 ```
 
+
+
+📝참조하세요 
+``` 
+$eq     =    Matches values that are equal to a specified value.
+$gt     >    Matches values that are greater than a specified value.
+$gte    >=   Matches values that are greater than or equal to a specified value.
+$in          Matches any of the values specified in an array.
+$lt     <    Matches values that are less than a specified value.
+$lte    <=   Matches values that are less than or equal to a specified value.
+$ne     !=   Matches all values that are not equal to a specified value.
+$nin         Matches none of the values specified in an array.
+```
+
 ## 배열에 사용하는 연산자들 ( $in, $nin )
 - rating이 3~6 사이의 것들을 검색
 ```

@@ -34,4 +34,49 @@ app.get("/books",(req,res) =>{
 14. 설치후 package.json 파일에 "mongodb": "^5.1.0" 있을 것입니다. 
  
 ## MongoDB 연결하기
+[db.js]
+```
+const { MongoClient} = require('mongodb')
+let dbConnetion
+module.exports = {
+  connetToDb: (cb)=>{ 
+    MongoClient.connet('mongodb://localhost:27017/bookstore')
+    .then( (client)=>{ 
+      dbConnetion= client.db()
+      return cb()
+     })
+     .catch(err=>{
+      console.log(err)
+      return cb(err)
+     })
+  },
+  getDb:()=> dbConnetion
+}
+```
+작성한 후에 [app.js]의 내용을 변경합니다. 
+``` js
+const express = require('express')
+const { connectToDb, getDb} = require('./db')
+
+// 초기화 app && 미들웨어
+const app = express()
+
+// db 연결
+let db
+connectToDb((err) =>{ 
+  if( !err) {
+    app.listen(3000, ()=>{
+      console.log("port 3000 작동중")
+    })
+    db=getDb()
+  }
+})
+// 라우터
+app.get("/books",(req,res) =>{
+  res.json({msg : "welcome to the api"})
+})
+```
+
+
+
 

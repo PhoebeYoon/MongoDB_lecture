@@ -25,3 +25,22 @@ bookstore> db.books.find({ $or:[ {pages : {$lt:200} },{ pages:{$gt:800} } ]}).co
 ```
 
 ## 배열에 사용하는 연산자들 ( $in, $nin )
+- rating이 3~6 사이의 것들을 검색
+```
+bookstore> db.books.find({rating: { $in:[4,5,6]}})
+```
+- rating이 6,7,8이 아닌 것들을 검색
+```
+ db.books.find({rating: { $nin:[6,7,8]}})
+```  
+- bookstore> db.books.find({genres:"fantasy"})
+
+<img width="300" alt="스크린샷 2023-03-24 오후 5 41 19" src="https://user-images.githubusercontent.com/48478079/227468642-cde81054-73e0-4a11-847a-0749fd6fd378.png"   >
+  결과로 'fantasy'가 나오기도 하지만 genres에 다른 값이 있는 것도 포함되어 있다.   
+  만약에 genres:fantasy만 있는것으로 검색하려면 아래와 같이 주어야 한다.   
+``` 
+bookstore> db.books.find({genres:["fantasy"]})
+```
+     
+
+

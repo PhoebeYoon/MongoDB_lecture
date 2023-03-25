@@ -45,4 +45,6 @@ C:\Program Files\MongoDB\Server\3.2\bin\ 에 설치됩니다.
 25. MongoDB Atlas
 
 ## 경험할 Tools
-몽고디비 shell, POSTMAN ,MongoDB Atlas(클라우드 데이터베이스 플랫폼)
+- 몽고디비 shell, 
+- POSTMAN (포스트맨은 개발자들이 API를 디자인하고 빌드하고 테스트하고 반복하기 위한 API 플랫폼 )
+- MongoDB Atlas(클라우드 데이터베이스 플랫폼)

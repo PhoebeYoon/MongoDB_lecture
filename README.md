@@ -131,4 +131,5 @@ app.get('/books', (req, res) => {
 })
 
 ```   
-실행시에는 브라우저의 url에 ``` http://localhost:3000/books ``` 입력후에 브라우저 내용에 모든 document의 내용이 보여지면 됩니다. 
+실행시에는 브라우저의 url에 ``` http://localhost:3000/books ``` 입력후에 브라우저 내용에 모든 document의 내용이 보여지면 됩니다.  
+<img width="231" alt="스크린샷 2023-03-25 오전 9 18 07" src="https://user-images.githubusercontent.com/48478079/227666831-ea551dde-49a9-479c-afa4-815cec4a18aa.png">

@@ -1,0 +1,22 @@
+{
+"title" :"The Final Empire",
+"author" : " Brandon Sanderson",
+"rating" : 9,
+"pages": 420,
+"genres":[
+    "fantasy",
+    "magic"
+],
+"reviews" :[
+    { 
+    "name" :"Hong",
+    "body": "It's good book"
+    },
+    { 
+    "name" :"Choi",
+    "body": "Good to read"
+    }
+]
+
+
+}

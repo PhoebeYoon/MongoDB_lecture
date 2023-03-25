@@ -29,10 +29,16 @@ export PATH=${PATH}:${HOMEBREW_HOME}/bin:${MYSQL_HOME}/bin
 <img width="273" alt="스크린샷 2023-03-23 오후 9 45 28" src="https://user-images.githubusercontent.com/48478079/227207744-7ee146d5-628c-44e5-af66-8d9f3ea17aad.png">   
 여기까지는 shell 방식으로 설치를 한것입니다    
 
-아래와 같이 실행해봅니다. default인것이 출력됩니다.   
+아래와 같이 실행해봅니다. default인것이 출력됩니다.   디비를 보여달라고 할때 use를 사용합니다.
 ```
 test> show dbs 
 admin
 config
 local
 ```
+디비를 사용하고자 할때 use 명령을 사용합니다. 그런데 이것은 없는 db에 사용해도 정상적으로 작동하는것처럼 보입니다. 아래의 예를 보시기 바랍니다.  collection를 보여달라고 할때 show  collections 입니다   
+```
+test> use mydb
+mydb> show collections
+```
+

@@ -59,7 +59,8 @@ test> cls - 터미널화면을 지울때
 test> show dbs - 현재 디비들을 보여줍니다 
 test> use mydb - db를 생성했다고 생각되지만 
 mydb> show dbs - mydb가 목록에 없습니다. 
-mydb> db - 현재 사용중인 디비를 확인했을때 mydb가 출력되지만 진짜 생성된것은 아닙니다 최소 1개이상의 document가 추가되어야 그때 진짜 생성되는 것입니다.   
+mydb> db - 현재 사용중인 디비를 확인했을때 mydb가 출력되지만 진짜 생성된것은 아닙니다 
+최소 1개이상의 document가 추가되어야 그때 진짜 생성되는 것입니다.   
 mydb> db.콜렉션이름.insert() - insert() 명령을 사용해서 문서를 생성하면 디비와 collection이 만들어집니다.
 이렇게 입력하고 난후 아래와 같은  acknowledged:true 가 나오면 생성이 되었다는 뜻입니다. 
 {

@@ -72,3 +72,25 @@ bookstore> db.books.insertMany([ 엔터
 <img width="400" alt="스크린샷 2023-03-24 오후 1 55 58" src="https://user-images.githubusercontent.com/48478079/227428477-adb0e512-f0b5-4137-a63c-99f7723e22b5.png">
 
 3. find() 메소드를 이용하여 collection 내의 document를 읽을 수 있습니다. 
+``` js
+test> use bookstore
+bookstore> db.getCollectionNames()
+bookstore> db.books.find()
+```
+4. db.collection이름.find(query, projection)       
+- query :Option. document selection criteria(기준). criteria 없이 collection내의 모든 document를 select하는 경우에는 생략하거나 { }를 전달한다. 
+- projection : Option으로 document select 결과에 포함될 field이다.  
+- id는 자동으로 출력되므로 출력에서 제외하고 싶다면 false로 지정해야 한다
+
+``` 
+bookstore> db.books.find({},{"title":1})  
+bookstore> db.books.find({},{"title":1,"author":1}) 
+bookstore> db.books.find({},{"title":1,"author":1, _id:0})
+bookstore> db.books.find({},{"title":true,"author":true, _id:0})
+bookstore> db.books.find(
+... {},
+... { _id:0,
+... title :1}
+... )
+
+``` 

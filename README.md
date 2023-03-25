@@ -10,13 +10,6 @@ MongoDB는 고정된 스키마가 없기 때문에 필요할때마다 쉽게 fie
 > 여기에 말하는 Document는 우리가 흔히 생각하는 워드나 엑셀에서 사용되는 것을 말하는 것이 아니라 RDBMS의 레코드와 비슷한 개념으로 key-value쌍으로 이루어져 있습니다 (json과 비슷하다고 생각하세요 )
 
 
-
-
-Collection는 MongoDB Document의 그룹입니다. Document들이 Collection내부에 위치하고 있습니다. Database는 Collection들의 물리적인 컨테이너입니다. Database는 파일시스템에 여러파일
-Document는 동적인 스키마를 가지고 있습니다.
-
-
-
 ## 설치방법
 MongoDB 공식 홈페이지의 다운로드 페이지에서 MSI 파일로 설치하면
 C:\Program Files\MongoDB\Server\3.2\bin\ 에 설치됩니다.

@@ -77,5 +77,7 @@ mydb> db.getCollectionNames() - []가 나옵니다.
 mydb> db.dropDatabase() - 현재 디비삭제
 mydb> 이렇게 나오지만 
 mydb> show dbs - mydb가 목록에 없습니다
+mydb> help- 입력하면 명령어에 대한 설명을 볼 수 있습니다. 
+mydb> exit - mongosh 상태에서  빠저나가기가 됩니다 
 ```
 

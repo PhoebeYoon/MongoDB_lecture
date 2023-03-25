@@ -28,11 +28,11 @@
 - master에 장애가 발생했을때 slave에서 master를 선출할 수 있다.
 
 ### MongoDB 실행 ( shell에서 )
->use mydb
->show dbs
->db.movie.insert({"name":"tutorials point"})
+```>use mydb```
+```>show dbs```
+```>db.movie.insert({"name":"tutorials point"})```
 
->use mydb  // 삭제하기 원하는 디비를 열고
->db.dropDatabase() // 디비를 삭제
+```>use mydb```  // 삭제하기 원하는 디비를 열고
+```>db.dropDatabase()``` // 디비를 삭제
 
 

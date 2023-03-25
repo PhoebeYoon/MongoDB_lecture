@@ -29,7 +29,8 @@ export PATH=${PATH}:${HOMEBREW_HOME}/bin:${MYSQL_HOME}/bin
 <img width="273" alt="스크린샷 2023-03-23 오후 9 45 28" src="https://user-images.githubusercontent.com/48478079/227207744-7ee146d5-628c-44e5-af66-8d9f3ea17aad.png">   
 
 여기까지는 shell 방식으로 설치를 한것입니다 
-```test> show dbs 
+```
+test> show dbs 
 admin
 config
 local

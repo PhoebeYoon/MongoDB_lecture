@@ -24,4 +24,6 @@ https://www.postman.com/ 접속하시고 본인의 운영체제에 맞게 다운
 <img width="548" alt="스크린샷 2023-03-25 오전 10 30 10" src="https://user-images.githubusercontent.com/48478079/227678067-c8aed73d-e5b0-42ee-8b0f-af371a7ae98d.png">
 
 5. 
-<img width="537" alt="스크린샷 2023-03-25 오전 10 40 55" src="https://user-images.githubusercontent.com/48478079/227679034-51169747-3272-47f2-af2f-aeb23bd52d0d.png">
+<img width="537" alt="스크린샷 2023-03-25 오전 10 40 55" src="https://user-images.githubusercontent.com/48478079/227679034-51169747-3272-47f2-af2f-aeb23bd52d0d.png">    
+Send버튼 후에 아래쪽부분에서 insertedId까지 나왔다면   
+왼쪽메뉴에서 모든 문서를 보여주는 url를 선택한 뒤 해당 문서가 삽입되어 있는지 확인합니다  

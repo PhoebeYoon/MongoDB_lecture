@@ -71,3 +71,4 @@ bookstore> db.books.insertMany([ 엔터
 
 <img width="400" alt="스크린샷 2023-03-24 오후 1 55 58" src="https://user-images.githubusercontent.com/48478079/227428477-adb0e512-f0b5-4137-a63c-99f7723e22b5.png">
 
+3. find() 메소드를 이용하여 collection 내의 document를 읽을 수 있습니다. 

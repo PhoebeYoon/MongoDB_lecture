@@ -1,5 +1,5 @@
 ###### :cactus:  MongoDB_lecture
-## shell 에서 명령어 연습하기
+## shell 에서 find() 연습하기
 
 - bookstore> db.books.find()
 모든 내용 보여줍니다. 

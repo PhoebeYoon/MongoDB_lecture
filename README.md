@@ -44,9 +44,12 @@ admin
 config
 local
 ```
-디비를 사용하고자 할때 use 명령을 사용합니다. 그런데 이것은 없는 db에 사용해도 정상적으로 작동하는것처럼 보입니다. 아래의 예를 보시기 바랍니다.  collection를 보여달라고 할때 show  collections 입니다   
+디비를 만들거나 사용하고자 할때 use 명령을 사용합니다.  
+아래의 예를 보시기 바랍니다.  방금 mydb라는 디비를 생성했습니다. 그러나 collection를 보여달라고 (show  collections ) 하면 collection이 없기때문에 아무내용도 나오질 않습니다.  
+현재 사용 중인 디비를 알려면 db라고 입력하면 됩니다.   
 ```
 test> use mydb
 mydb> show collections
+mydb> db
 ```
 

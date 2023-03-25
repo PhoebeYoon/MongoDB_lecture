@@ -23,3 +23,5 @@ app.get('/books/:id', (req, res) => {
 })
 
 ```
+실행시에는 ``` http://localhost:3000/books/641c5c4a4b4ae7c5cd55f79a ```  
+doucment 중 하나를 선택하고 거기에 있는 id값을 사용합니다. 브라우저에 해당 document만 출력됩니다

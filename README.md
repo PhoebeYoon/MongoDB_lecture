@@ -23,7 +23,7 @@
 10. join이 불가능하므로 미리 embedding 시켜야 한다.   
 11. 데이터형과 대소문자를 구분합니다. {"count" : 5} 와 {"count" : "5"} 다릅니다. 또한 {"count" : 5}와 {"Count" : 5}도 다릅니다
 12. 키가 중복될 수 없습니다. {"greeting" : "Hello world", "greeting" :"Hi, MongoDB"} (올바른 표현이 아닙니다)
-13. MongoDB는 같은 document에 다른 fields를 가질 수 있지만 같은 collection안에 있는 documents는 같은 목적를 제공하기 위해 저장되었다.
+13. MongoDB는 같은 document에 다른 fields를 가질 수 있지만 같은 collection안에 있는 documents는 같은 목적를 제공하기 위해 저장됩니다
 
 ## 장-단점
 - 스키마를 사용하지 않는다는 것은 다양한 형태의 데이터를 저장할 수 있다는 말이며, 데이터 모델의 유연한 변과가 가능하다. 데이터모델이 변경가능하고 필드를 쉽게 확장할 수 있다.

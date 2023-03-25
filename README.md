@@ -91,4 +91,44 @@ var cur=db.books.find()
 cur.next() # 첫번째 document가 출력됩니다
 cur.next() # 두번째 document가 출력됩니다
 
-```
+``` 
+## books collection의 데이터 가져오기 
+
+[app.js]의 내용을 변경해줍니다.  
+``` js
+const express = require('express')
+const { getDb, connectToDb } = require('./db')
+
+// init app & middleware
+const app = express()
+
+// db connection
+let db
+
+connectToDb((err) => {
+  if(!err){
+    app.listen('3000', () => {
+      console.log('app listening on port 3000')
+    })
+    db = getDb()
+  }
+})
+
+// routes
+app.get('/books', (req, res) => {
+  let books = []
+
+  db.collection('books')
+    .find()
+    .sort({author: 1})
+    .forEach(book => books.push(book))
+    .then(() => {
+      res.status(200).json(books)
+    })
+    .catch(() => {
+      res.status(500).json({error: 'Could not fetch the documents'})
+    })
+})
+
+```   
+실행시에는 브라우저의 url에 ``` http://localhost:3000/books ``` 입력후에 브라우저 내용에 모든 document의 내용이 보여지면 됩니다. 

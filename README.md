@@ -23,13 +23,15 @@
 10. join이 불가능하므로 미리 embedding 시켜야 한다.   
 11. 데이터형과 대소문자를 구분합니다. {"count" : 5} 와 {"count" : "5"} 다릅니다. 또한 {"count" : 5}와 {"Count" : 5}도 다릅니다
 12. 키가 중복될 수 없습니다. {"greeting" : "Hello world", "greeting" :"Hi, MongoDB"} (올바른 표현이 아닙니다)
+13. MongoDB는 같은 document에 다른 fields를 가질 수 있지만 같은 collection안에 있는 documents는 같은 목적를 제공하기 위해 저장되었다.
 
+## 장-단점
 - 스키마를 사용하지 않는다는 것은 다양한 형태의 데이터를 저장할 수 있다는 말이며, 데이터 모델의 유연한 변과가 가능하다. 데이터모델이 변경가능하고 필드를 쉽게 확장할 수 있다.
 - json 구조이기 때문에 데이터를 직관적으로 이해할 수 있다
 - 비효율적인 key 중복입력될 수 있다.
 - 많은 인덱스를 사용할 수 있다
 - memory  mapped (데이터 쓰기에 os의 가상 메모리에 데이터를 넣은 후 비동기로 디스크에 기록하는 방식)을 사용한다.
-- os의 메모리를 활용하기 때문에 메모리가 차면 하드디스크로 데이터처리를 하여 속도가 급격히 느려지나
+- os의 메모리를 활용하기 때문에 메모리가 차면 하드디스크로 데이터처리를 하여 속도가 급격히 느려집니다
 
 
 
@@ -64,13 +66,8 @@
 
 ```  
 - MongoDB에는 12bytes의 hexadecimal값으로 이루어진 _id가 자동으로 생성되며 각 document에서 유일한 값을 가지고 있습니다.
-12bytes 중 timestamp로4byes, machine id로 3byte, MongoDB서버의 프로세스 id로 2bytes, 나머지 3bytes는 순차번호입니다. 이것은 레코드가 생성될때마다 값이 높아지는 것입니다.  
+12bytes 중 timestamp로4bytes, machine id로 3byte, MongoDB서버의 프로세스 id로 2bytes, 나머지 3bytes는 순차번호입니다. 이것은 레코드가 생성될때마다 값이 높아지는 것입니다.  
 - MongoDB안의 데이터베이스는 the physical container of the data. Then, in a single MongoDB server, multiple database are available, and each database has a file system and set of files in it. 
-- Collection in MongoDB는 databased document의 그룹이다. RDBMS의 table과 비교될 수 있지만 collection에는 스키마 구조가 없다.  MongoDB는 같은 document에 다른 fields를 가질 수 있지만 같은 collection안에 있는 documents는 같은 목적를 제공하기 위해 저장되었다.
-
-Collection은 table, Document는 row, field는 column과 같다.
-
-
 
 
 ## MongoDB는 embedded 데이터모델과 정규화데이터모델의 2가지 유형의 데이터 모델을 제공한다. 
@@ -139,13 +136,10 @@ Address:
 }
 ``` 
 
-
-
-
-## JSON 표기법
+## JSON ( JavaScript Object Notation) 표기법
 - 각 객체는 {  } (중괄호)로 시작하고 끝난다.
+- JSON 배열은 대괄호 블록 [  ]으로 표기합니다
 - 문자열과 값으로 구성되어 있고 콜론(:)으로 구분한다
-- 각 멤버는 콤마(,)로 구분
+- 속성은 쌍따옴표(")로 묶어 표기하며,속성이 여러개이면 콤마(,)로 구분합니다.
 - 값으로는 object, string, number, array, boolearn, null 사용
 - 문자는 따옴표를 사용하여 표기
-- 배열은 [  ] (대괄호)로 시작

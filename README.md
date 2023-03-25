@@ -27,7 +27,15 @@ export PATH=${PATH}:${HOMEBREW_HOME}/bin:${MYSQL_HOME}/bin
 3. mongosh 엔터 📎   
 실행되면 검정화면에 노란색 줄무늬와 함께 ``` test> ``` 가 나옵니다 
 <img width="273" alt="스크린샷 2023-03-23 오후 9 45 28" src="https://user-images.githubusercontent.com/48478079/227207744-7ee146d5-628c-44e5-af66-8d9f3ea17aad.png">   
-여기까지는 shell 방식으로 설치를 한것입니다    
+여기까지는 shell 방식으로 설치를 한것입니다     
+
+MongoDB는 자바스크립트 플랫폼을 이용하기 때문에 일반 터미널에서 아래와 같이 사용할 수도 있습니다.
+``` 
+test> for(var i=0; i<3; i++) {print("i=" + i)} 
+test> let name ="Hong gil dong"
+test> name
+```
+
 
 아래와 같이 실행해봅니다. default인것이 출력됩니다.   디비를 보여달라고 할때 use를 사용합니다.
 ```

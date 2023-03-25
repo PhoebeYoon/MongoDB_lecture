@@ -23,4 +23,11 @@ db.books.createIndex({rating:8})
 db.books.getIndexes() 
 ```  
 위에 있는 결과와 확인해 보세요   
-<img width="203" alt="스크린샷 2023-03-25 오후 12 30 21" src="https://user-images.githubusercontent.com/48478079/227689733-e4d30e64-b342-474e-8bdc-55011d1383d2.png">
+<img width="203" alt="스크린샷 2023-03-25 오후 12 30 21" src="https://user-images.githubusercontent.com/48478079/227689733-e4d30e64-b342-474e-8bdc-55011d1383d2.png">   
+
+
+MONGOSH에서,  
+```
+db.books.dropIndex({rating:8})
+```
+

@@ -45,4 +45,4 @@ C:\Program Files\MongoDB\Server\3.2\bin\ 에 설치됩니다.
 25. MongoDB Atlas
 
 ## 경험할 Tools
-POSTMAN ,MongoDB Atlas
+몽고디비 shell, POSTMAN ,MongoDB Atlas(클라우드 데이터베이스 플랫폼)

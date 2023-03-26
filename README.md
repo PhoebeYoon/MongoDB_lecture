@@ -123,3 +123,7 @@ bookstore> db.books.find({"reviews.body" : "one of my favs" })
 ```
 위에서 첫째줄은 quotation으로 감싸지 않아도 되지만 아랫줄은 quotation으로 감싸야합니다.  그리고 첫글자가 대문자 "Kim"로 시작하면 검색되지 않습니다.  
 
+###  countDocuments 
+```
+bookstore> db.books.countDocuments({"reviews.name":"Hong"  })
+```

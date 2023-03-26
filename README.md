@@ -2,7 +2,14 @@
 
 ## Document를 업데이트
 ### shell에서 한개의 document를 업데이트 
-업데이트는 뭘할지를 찾아서 어떻게 바꿀지를 적어야 합니다. 업데이트할 대상은 id로 찾고 rating의 숫자를 바꿔보겠습니다.  
+업데이트는 뭘할지를 찾아서 어떻게 바꿀지를 적어야 합니다.   
+만약 pages:400 --> pages: 401로 변경하고자 한다면 
+```
+bookstore> db.books.find({pages:400}) - 먼저 있는지 찾아봅니다 
+bookstore> db.books.updateOne({pages:400},{pages:401}) - 이렇게하면 변경되질 않습니다.
+bookstore> db.books.updateOne({pages:400},{$set: { pages:401 } }) - $set를 넣어야 합니다
+```   
+이번에는 업데이트할 대상은 id로 찾고 rating의 숫자를 바꿔보겠습니다.  
 한개의 document를 변경할때는 updateOne() 와 특정필드의 변경을 위해 $set 연산자를 사용합니다. 
 ``` 
 bookstore> db.books.updateOne({ _id:ObjectId("641d72e412e5a0ec4283ac9e")},  {$set:{rating:8, pages:320}})
@@ -79,4 +86,11 @@ bookstore> db.books.updateOne({_id:ObjectId("641d6f9c12e5a0ec4283ac9a") },
 
 <img width="341" alt="스크린샷 2023-03-24 오후 8 06 03" src="https://user-images.githubusercontent.com/48478079/227505246-a833dd59-9ff6-4ef0-9a22-bdfa55f70d6e.png">
 
+## $rename (field 명 변경하기 )
 
+```
+bookstore> db.bank.find()
+bookstore> db.bank.updateOne({_id:ObjectId("641fa96312af9b3dd4c3ce20")},{ $rename:{name:'firstname'} })
+(결과를 확인한 후에 되돌립니다 )
+bookstore> db.bank.updateOne({_id:ObjectId("641fa96312af9b3dd4c3ce20")},{ $rename:{'firstname':"name"} })
+```

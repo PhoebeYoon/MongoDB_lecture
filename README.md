@@ -86,11 +86,24 @@ bookstore> db.books.updateOne({_id:ObjectId("641d6f9c12e5a0ec4283ac9a") },
 
 <img width="341" alt="스크린샷 2023-03-24 오후 8 06 03" src="https://user-images.githubusercontent.com/48478079/227505246-a833dd59-9ff6-4ef0-9a22-bdfa55f70d6e.png">
 
-## $rename (field 명 변경하기 )
+## key 이름을 변경하고자 할때 ($rename )
 
 ```
 bookstore> db.bank.find()
 bookstore> db.bank.updateOne({_id:ObjectId("641fa96312af9b3dd4c3ce20")},{ $rename:{name:'firstname'} })
 (결과를 확인한 후에 되돌립니다 )
 bookstore> db.bank.updateOne({_id:ObjectId("641fa96312af9b3dd4c3ce20")},{ $rename:{'firstname':"name"} })
+```    
+여러개의 문서에 있는 key 이름을 모두 바꾸고자 한다면   
+
 ```
+bookstore> db.bank.updateMany({},{
+... $rename: {
+... "name":"Fullname"
+... }
+... })
+
+```
+
+
+

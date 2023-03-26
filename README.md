@@ -5,23 +5,46 @@ find({ rating : {   } }) rating이 7보다 크다. 연산자는 $로 시작, gt�
 ```
 bookstore> db.books.find({rating: {$gt:7 } })
 ``` 
-
+### lt, lte, gte, gt
 ```  
 bookstore> db.books.find({rating: {$lt:7 } })
 bookstore> db.books.find({rating: {$lte:7 } })
+bookstore> db.books.find({rating: {$gt:7 } })
+bookstore> db.books.find({rating: {$gte:7 } })
+bookstore> db.books.find({rating: {$gte:6, $lte:8}})  - 6,7,8 검색됨
 bookstore> db.books.find({rating: {$gte:7 } })
 ```   
 조건을 2개  
 ```
 bookstore> db.books.find({ rating: { $gt:7},author:"Brandon Sanderson" })
+bookstore> db.books.find({ rating: {$gte:6, $lte:8}, pages:{$gt:700}})
 ```     
-
+### or
 ratin이 7과 9사이를 검색하고자 한다면  find({ $or:[ ] })로 시작   
 ```
 bookstore> db.books.find({ $or:[ {rating : 7}, {rating:9} ]} ) 
 bookstore> db.books.find({ $or:[ {rating : {$gte:7} },{rating:9} ]} )
 bookstore> db.books.find({ $or:[ {pages : {$lt:200} },{ pages:{$gt:800} } ]}) 
 bookstore> db.books.find({ $or:[ {pages : {$lt:200} },{ pages:{$gt:800} } ]}).count()
+```
+
+### and
+```
+
+bookstore> db.books.find({ $and:[ {rating:{ $gt:6}}, {pages:{ $gt:700}}]  })
+``` 
+
+### not 
+```
+bookstore> db.books.find({ rating: {$not:{ $lte:10} }})
+```    
+이 경우에는 rating 속성이 없는 것도 검색됩니다 
+
+
+### eq, ne
+``` js   
+bookstore> db.books.find({author : {$eq:"Brandon Sanderson"}})
+bookstore> db.books.find({author : {$ne:"Brandon Sanderson"}})
 ```
 
 
@@ -56,6 +79,7 @@ bookstore> db.books.find({rating: { $in:[4,5,6]}})
 ``` 
 bookstore> db.books.find({genres:["fantasy"]})
 ```   
+
 genres가 "fantasy" 와 "magic" 2개를 만족하는 경우를 검색.  
 ```
 bookstore> db.books.find({genres:["fantasy","magic"]})
@@ -66,6 +90,18 @@ bookstore> db.books.find({genres:{$all: ["fantasy"]} })
 bookstore> db.books.find({genres:{$all: ["fantasy","fairy tale"]} })
 ```
 위의 문장에서 "bookstore> db.books.find({genres:{$all: ["fantasy","fairy tale (공백)"]} })" 을 넣으면 검색되지 않으니 주의하세요  
+ 
+author에 2명에 대한 정보를 찾아봅시다.  
+```
+bookstore> db.books.find({author: { $in:["Robert Harris", "Brandon Sanderson"] } })
+```
+ 
+## $exists 
+```js
+bookstore> db.books.find({ reviews:{$exists :true} })
+```    
+reviews 속성이 있는 것만 출력합니다. 만약 속성에 값대신 null 로 들어간 경우에는 true로 간주됩니다. 
+ 
  
 ## document안에 document형식으로 들어있는 것들 검색
 - books 안에 reviews는 다시 document형식으로 되어있다. 이 reviews안에 있는 name속성으로 검색을 해봅시다. 자바스크립트에서 객체를 접속할때 (.) dot 연산자를 사용한다는 것을 기억하고 다음과 같이 입력해봅시다.  (속성의 이름은 quotation으로 감싸야 합니다 )

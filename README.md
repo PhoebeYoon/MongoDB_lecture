@@ -90,6 +90,13 @@ bookstore> db.books.find({genres:{$all: ["fantasy"]} })
 bookstore> db.books.find({genres:{$all: ["fantasy","fairy tale"]} })
 ```
 위의 문장에서 "bookstore> db.books.find({genres:{$all: ["fantasy","fairy tale (공백)"]} })" 을 넣으면 검색되지 않으니 주의하세요  
+```
+bookstore> db.books.find({"reviews.name":"Hong"  })
+bookstore> db.books.find({"reviews.body":"one of my favs" })
+
+```
+
+
  
 author에 2명에 대한 정보를 찾아봅시다.  
 ```

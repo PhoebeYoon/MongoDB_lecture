@@ -98,7 +98,7 @@ bookstore> db.bank.updateOne({_id:  ObjectId("641fa96312af9b3dd4c3ce20")},{$set:
 ```
 bookstore> db.bank.updateMany({debt:{$exists:true}}, {$set:{ insurance :true}})
 ```
-📝 replaceOne등의 replace~ 시작하는 명령어은 insurance 필드만 남기거 나머지 필드는 없애기 때문에 주의하세요
+📝 replaceOne등의 replace~ 시작하는 명령은 insurance 필드만 남기고 나머지 필드는 없애기 때문에 주의하세요
 
 ## key 이름을 변경하고자 할때 ($rename )
 

@@ -15,6 +15,7 @@
 - bookstore> db.books.find({author:'Brandon Sanderson'}, {title:false,author:false})     
 ``` 이렇게하면 title, author를 뺀 나머지 내용이 출력됩니다. (이렇게는 사용하지 않습니다. 그냥 title:1 를 설명하고자 하는 것입니다 ) ```
 
+
 - bookstore> db.books.find({}, {title:1, author:1})   
 ```( 모든 collection중에서 title, author만 출력해줍니다 )   ```
 - bookstore> db.books.findOne({_id:ObjectId("641d2b40a0139faf66b2f997")})    

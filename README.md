@@ -2,7 +2,7 @@
 
 
 우리는 MongoDB Community Server 를 이용한 것입니다 아래의 링크를 클릭해서 로컬에 설치하도록 하겠습니다.
-### MongoDB 설치방법 (mac 버전입니다 )
+## MongoDB 설치방법 (mac 버전입니다 )
 
 - https://www.mongodb.com/try/download/community   
 - Version, Platform , Package를 본인에게 맞게 선택하세요

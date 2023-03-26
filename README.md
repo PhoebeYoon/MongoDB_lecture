@@ -61,7 +61,7 @@ $ne     !=   Matches all values that are not equal to a specified value.
 $nin         Matches none of the values specified in an array.
 ```
 
-## 배열에 사용하는 연산자들 ( $in, $nin )
+### 배열에 사용하는 연산자들 ( $in, $nin )
 - rating이 3~6 사이의 것들을 검색
 ```
 bookstore> db.books.find({rating: { $in:[4,5,6]}})
@@ -96,11 +96,21 @@ author에 2명에 대한 정보를 찾아봅시다.
 bookstore> db.books.find({author: { $in:["Robert Harris", "Brandon Sanderson"] } })
 ```
  
-## $exists 
+### $exists 
 ```js
 bookstore> db.books.find({ reviews:{$exists :true} })
 ```    
 reviews 속성이 있는 것만 출력합니다. 만약 속성에 값대신 null 로 들어간 경우에는 true로 간주됩니다. 
+ 
+### $expr 
+두개의 값을 비교합니다.  bank라는 collection를 만들어보겠습니다.
+```
+bookstore> db.bank.insertMany([{name:"Tom",balance: 100, debt: 200}, { name:"Smith", balance: 90, debt: 30} ])
+( balance 가 debt보다 큰 경우만 검색해 보겠ㅅ브니다. 필드명$가 삽입된다는 것 주의하세요)
+
+bookstore> db.bank.find({ $expr: {$gt:["$balance","$debt"]}  }) (맞고)
+bookstore> db.bank.find({ $expr: {$gt:["balance","debt"]}  }) (틀리고)
+```
  
  
 ## document안에 document형식으로 들어있는 것들 검색

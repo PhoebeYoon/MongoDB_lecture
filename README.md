@@ -86,6 +86,16 @@ bookstore> db.books.updateOne({_id:ObjectId("641d6f9c12e5a0ec4283ac9a") },
 
 <img width="341" alt="스크린샷 2023-03-24 오후 8 06 03" src="https://user-images.githubusercontent.com/48478079/227505246-a833dd59-9ff6-4ef0-9a22-bdfa55f70d6e.png">
 
+### $unset 
+```
+bookstore> db.bank.find()
+bookstore> db.bank.updateOne({_id:  ObjectId("641fa96312af9b3dd4c3ce20")},{$unset:{debt:"" }})
+bookstore> db.bank.find() - 결과를 확인했다면 다시 되돌립니다
+bookstore> db.bank.updateOne({_id:  ObjectId("641fa96312af9b3dd4c3ce20")},{$set:{debt:50 }})
+```
+
+
+
 ## key 이름을 변경하고자 할때 ($rename )
 
 ```
@@ -102,6 +112,9 @@ bookstore> db.bank.updateMany({},{
 ... "name":"Fullname"
 ... }
 ... })
+
+(원래대로 되돌립니다 )
+bookstore> db.bank.updateMany( {}, { $rename: { 'Fullname': "name" } })
 
 ```
 

@@ -94,7 +94,11 @@ bookstore> db.bank.find() - 결과를 확인했다면 다시 되돌립니다
 bookstore> db.bank.updateOne({_id:  ObjectId("641fa96312af9b3dd4c3ce20")},{$set:{debt:50 }})
 ```
 
-
+### $exits와 함께 사용하기
+```
+bookstore> db.bank.updateMany({debt:{$exists:true}}, {$set:{ insurance :true}})
+```
+📝 replaceOne등의 replace~ 시작하는 명령어 insurance 필드만 남기거 나머지 필드는 없애기 때문에 주의하세요
 
 ## key 이름을 변경하고자 할때 ($rename )
 

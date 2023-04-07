@@ -77,7 +77,7 @@ mydb> show dbs - 목록에 mydb가 보입니다
 이미 존재하지 않은 콜렉션일지라도 데이터를 주면서 컬렉션이름을 주면 데이터를 입력하면서 컬렉션이 만들어집니다. 
 
 
-mydb> db.getCollectionNames() - 현재 디비의 collection 이름 알아내기 ['books']가 출력도비니다.
+mydb> db.getCollectionNames() - 현재 디비의 collection 이름 알아내기 ['books']가 출력됩니다.
 mydb> db.books.drop() - 현재 디비의 collection 삭제할때 콜렉션을 적습니다 
 mydb> db.getCollectionNames() - []가 나옵니다.
 mydb> db.dropDatabase() - 현재 디비삭제

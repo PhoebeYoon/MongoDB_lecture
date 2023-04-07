@@ -69,6 +69,7 @@ mydb> db.콜렉션이름.insert() - insert() 명령을 사용해서 문서를 �
   insertedIds: { '0': ObjectId("641ef51108f43add046642b8") }
 }
 이때 collection도 생성됩니다  콜렉션의 이름을 books라고 가정해보겠습니다. 
+
 mydb> db.books.insert({ title: "The Lord of Rings", author: "Lee", price: 100 } )
 mydb> show dbs - 목록에 mydb가 보입니다 
 

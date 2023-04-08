@@ -6,7 +6,8 @@
 
 - https://www.mongodb.com/try/download/community   
 - Version, Platform , Package를 본인에게 맞게 선택하세요
-- 윈도우 사용자는 3. 📎 으로 넘어가세요  
+- 그리고 설치화면을 따라 진행합니다. 
+- 설치가 되었다면 윈도우 사용자는 3. 📎 으로 넘어가세요  
 - Mac에서 설치시 '확인되지 않은 개발자'로 나오면서 설치가 되지 않는다면 사과 > 시스템설정 > 개인정보 보호 및 보안 > 보안 : App Store 로 바꿔서 실행하세요
 
 - ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" ``` 
@@ -46,13 +47,13 @@ config
 local
 ```
 디비를 만들거나 사용하고자 할때 use 명령을 사용합니다.  
-아래의 예를 보시기 바랍니다.  방금 mydb라는 디비를 생성했습니다. 그러나 collection를 보여달라고 (show  collections ) 하면 collection이 없기때문에 아무내용도 나오질 않습니다.  
-현재 사용 중인 디비를 알려면 db라고 입력하면 됩니다.   
+아래의 예를 보시기 바랍니다.   
 ```
 test> use mydb
-mydb> show collections
 mydb> db
 ```   
+방금 mydb라는 디비를 생성했습니다.  현재 사용 중인 디비를 알려면 db라고 입력하면 됩니다. 
+
 자, 여기서 정리를 하자면,  
 
 ```  

@@ -100,7 +100,7 @@ bookstore> db.bank.updateMany({debt:{$exists:true}}, {$set:{ insurance :true}})
 ```
 📝 replaceOne등의 replace~ 시작하는 명령은 insurance 필드만 남기고 나머지 필드는 없애기 때문에 주의하세요
 
-## key 이름을 변경하고자 할때 ($rename )
+### key 이름을 변경하고자 할때 ($rename )
 
 ```
 bookstore> db.bank.find()
@@ -119,5 +119,9 @@ bookstore> db.bank.updateMany({},{
 
 (원래대로 되돌립니다 )
 bookstore> db.bank.updateMany( {}, { $rename: { 'Fullname': "name" } })
-
 ```
+
+### countDocuments
+db.books.countDocuments({'rating':{ $gt:8}}) 
+
+

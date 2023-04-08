@@ -32,9 +32,15 @@ bookstore> db.getCollectionNames()
 - bookstore> db.books.find().sort()
 - bookstore> db.books.find().sort({title:1})  ``` 기준을 넣고자 할때 sort({ 기준}) , 오름차순 ```
 - bookstore> db.books.find().sort({title:-1}) ``` 내림차순 ``` 
-- bookstore> db.books.find().sort({title:1}).limit(3) 
-- bookstore> db.books.find({"author":/bell/i})
+- bookstore> db.books.find().sort({title:1}).limit(3)   
 
+
+
+```
+bookstore> db.books.find({"author":/bell/i}) <-- bell 이 포함된
+bookstore> db.books.find({ "genres":{$regex:/^a/}  }) <-- a로 시작하는 
+bookstore> db.books.find({ "genres":{$regex:'action'}})
+```
 
 
 📝 참조)

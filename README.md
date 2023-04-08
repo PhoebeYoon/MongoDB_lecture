@@ -1,6 +1,9 @@
 ###### :cactus:  MongoDB_lecture
 
+
+
 ## 데이터형
+아래의 내용에서는 회색으로 되어 있는 부분에 어떤 내용이 표현되어 있는지 보시면 됩니다. 그리고 "x"는 그냥 key로 , 형식에 맞추어 쓰고자해서 넣은것이고 여기서 별다른 의미는 없습니다.    
 - null : null 값과 존재하지 않는 필드를 표현할때 사용
  ```{x : null } {"x" : true }```
 - 숫자 : 64비트 부동소수점 수를 기본으로 사용합니다. 
@@ -24,34 +27,14 @@
 
 
 ## shell 에서 스크립트 실행하기 및 종료
-```> mongosh demo1.js ```    
-```test> load("demo3.js") ``` 결과로 ture가 나옵니다   
-```test> exit ```  종료할때    
-
-
-
-
+```
+> mongosh   <-- 시작
+test> exit  <-- 종료
+```       
 
 ### shell 명령어들
- 
- - use blog ( 데이터베이스 이름을 use로 입력한 후 새 데이터베이스를 변경하거나 작성할 수 있습니다 )
- - db.createCollection("posts") (createCollection() 데이터베이스 메서드를 사용하여 컬렉션을 만들 수 있습니다)
- - insertOne()
- - insertMany() 
- - find()
- - findOne()
- - updateOne()
- - updateMany()
- - deleteOne()
- - deleteMany()
- - $set
- - $pop
- - $pull
- - $push
- - $limit
- - $sort
- - $count
- - MongoDB Drivers 
+ - 첨부된 pdf 파일을 다운로드 하세요 
+
 
 
 

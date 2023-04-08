@@ -90,13 +90,7 @@ bookstore> db.books.find({title :{$regex:/The odyssey [1,3]/} })
 bookstore> db.books.find({title :{$regex:/The odyssey [1,3]/i} })
 bookstore> db.books.find({title :{$regex:/The odyssey [1-3]/i} })
 bookstore> db.books.find({title :{$regex:/The odyssey [1-3]/i,$not:/The Odyssey 2/ } })
-```
-
-
-
-bookstore> db.books.find({"reviews.name":{$all:['kim','park'] }   })
-
-
+```  
 
 📝 참조)
 https://www.mongodb.com/docs/manual/reference/method/db.collection.find/

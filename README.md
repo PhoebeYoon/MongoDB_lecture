@@ -63,8 +63,9 @@ test> use mydb - db를 생성했다고 생각되지만
 mydb> show dbs - mydb가 목록에 없습니다. 
 mydb> db - 현재 사용중인 디비를 확인했을때 mydb가 출력되지만 진짜 생성된것은 아닙니다 
 최소 1개이상의 document가 추가되어야 그때 진짜 생성되는 것입니다.   
+
 mydb> db.콜렉션이름.insert() - insert() 명령을 사용해서 문서를 생성하면 디비와 collection이 만들어집니다.
-이렇게 입력하고 난후 아래와 같은  acknowledged:true 가 나오면 생성이 되었다는 뜻입니다. 
+이렇게 입력하고 난후 아래와 같은 acknowledged:true 가 나오면 생성이 되었다는 뜻입니다. 
 {
   acknowledged: true,
   insertedIds: { '0': ObjectId("641ef51108f43add046642b8") }
@@ -81,10 +82,12 @@ mydb> show dbs - 목록에 mydb가 보입니다
 mydb> db.getCollectionNames() - 현재 디비의 collection 이름 알아내기 ['books']가 출력됩니다.
 mydb> db.books.drop() - 현재 디비의 collection 삭제할때 콜렉션을 적습니다 
 mydb> db.getCollectionNames() - []가 나옵니다.
-mydb> db.dropDatabase() - 현재 디비삭제
-mydb> 이렇게 나오지만 
+mydb> db.dropDatabase() - 현재 디비삭제 
+{ ok: 1, dropped: 'mydb' }
+
+mydb> 프롬프트에 'mydb' 라고 여전히 나오지만 
 mydb> show dbs - mydb가 목록에 없습니다
-mydb> help- 입력하면 명령어에 대한 설명을 볼 수 있습니다. 
-mydb> exit - mongosh 상태에서  빠저나가기가 됩니다 
+mydb> help <- 입력하면 명령어에 대한 설명을 볼 수 있습니다. 
+mydb> exit <- mongosh 상태에서  빠저나가기가 됩니다 
 ```    
 :pencil: 주의하세요. 몽고디비는 데이타베이스의 이름을 잘못적어도 에러메시지대신 프롬프트에 그대로 반영되어 나옵니다. 스펠링체크가 중요합니다 

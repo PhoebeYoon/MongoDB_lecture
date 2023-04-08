@@ -46,7 +46,11 @@ shell에서 입력했던것과 비슷해보이지만 키값을 더블쿼테이�
 { "item": "planner",  "qty": 75,  "size": { "h": 22.85, "w": 30, "uom": "cm" }, "status": "D" },
 { "item": "postcard", "qty": 45,  "size": { "h": 10, "w": 15.25, "uom": "cm" }, "status": "A" }
 ]
-```
+```    
+
+문서수정을 원하시면 해당 문서에 마우스를 올린 후 나타나는 연필아이콘을 클릭하시면 됩니다   
+<img width="400" alt="스크린샷 2023-04-08 오후 1 14 38" src="https://user-images.githubusercontent.com/48478079/230702776-dae52bbc-4ddf-4649-b423-542a231b38f0.png">
+
 
 
 

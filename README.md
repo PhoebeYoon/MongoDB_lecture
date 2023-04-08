@@ -94,7 +94,7 @@ show collections
 db.books
 db.books.insertOne({ title:"The Color of Magic", author:"Terry Pratchett", pages:300, rating:7, genres :["fantasy","magic"]  })
 ```     
-1. 한개의 데이터 입력하기   
+#### 1. 한개의 데이터 입력하기   
 insertOne()는 하나의 데이터를 입력하겠다는 뜻입니다. 잘 입력되었다면  다음과 같이 출력됩니다. 
 ```
 {
@@ -114,7 +114,7 @@ bookstore> db.books.insertOne(demo)
 이렇게하고 compass 확인해보면 새로운 collection이 만들어져 있습니다. compass에서 보이지 않는다면 refresh를 하면 됩니다.  
 <img width="200" alt="스크린샷 2023-03-24 오전 11 43 17" src="https://user-images.githubusercontent.com/48478079/227410999-bb1341c7-726d-42f3-bd3e-b9f5fe7fd979.png">
 
-이제 실습을 위해 삭제해 보도록 하겠습니다. 문서를 삭제할때는 'delete' 이고 collection를 삭제할때는 'drop' 이라는 명령입니다. 
+이제 삭제해 보도록 하겠습니다. 문서를 삭제할때는 'delete' 이고 collection를 삭제할때는 'drop' 이라는 명령입니다. 
 
 <img width="445" alt="스크린샷 2023-03-24 오전 11 45 56" src="https://user-images.githubusercontent.com/48478079/227411328-8339e004-80b0-45e6-b492-3054db566715.png">
 
@@ -122,16 +122,21 @@ bookstore> db.books.insertOne(demo)
 <img width="200" alt="스크린샷 2023-03-24 오전 11 46 06" src="https://user-images.githubusercontent.com/48478079/227411319-07517b80-187c-4c35-aa95-364517bb4ece.png">
 collection를 삭제할때는 gitHub처럼 이름을 다시 한번 입력해야 삭제됩니다.
 
-2. 여러개의 데이터 입력하기    
+<img width="300" alt="스크린샷 2023-04-08 오후 7 51 32" src="https://user-images.githubusercontent.com/48478079/230717304-f12ca026-e4fd-4787-97a5-7f619e4d874a.png">
+
+
+#### 2. 여러개의 데이터 입력하기    
 ``` 
 bookstore> db.books.insertMany([{ "title": "The Light Fantastic", "author": "Terry Pratchett", "pages": 250,"genres": [ "fantasy" ], "rating":6 }, 
 {"title": "Dune","author": "Frank Herbert", "pages": 500,"genres": ["sci-sf","dystopian"],"rating":10} ])
 ```     
 이렇게 입력하면   
 
-<img width="282" alt="스크린샷 2023-03-24 오후 12 05 44" src="https://user-images.githubusercontent.com/48478079/227413989-d032691b-eabc-4e33-817f-50613957326e.png">
-입력이 잘 되었다는 의미로 acknowledged :true가 나오고 id 값이 자동생성됩니다.   
-여기까지 잘 따라오셨다면 13개의 문서가 있을 것입니다. 
+<img width="282" alt="스크린샷 2023-03-24 오후 12 05 44" src="https://user-images.githubusercontent.com/48478079/227413989-d032691b-eabc-4e33-817f-50613957326e.png">   
+입력이 잘 되었다는 의미로 acknowledged :true가 나오고 id 값이 자동생성됩니다.      
+여기까지 잘 따라오셨다면 13개의 문서가 있을 것입니다.      
+
+
 
 :cookie: shell 에서 아래와 같이 여러줄에 거쳐서 내용을 입력할 수도 있습니다. ... (점3개) 나온다는 것 미리 숙지하시고요. 여러개 입력하니까 대괄호 들어갑니다. 이거 빠뜨리면 ' MongoInvalidArgumentError: Argument "docs" must be an array of documents' 라고 에러메시지 나옵니다. 
 ```

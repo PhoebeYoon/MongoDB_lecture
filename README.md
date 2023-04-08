@@ -1,6 +1,10 @@
 ###### :cactus:  MongoDB_lecture
-## shell 에서 find() 연습하기
 
+### 컬렉션목록보기
+bookstore> show collections   
+bookstore> db.getCollectionNames()  
+
+### shell 에서 find() 연습하기
 - bookstore> db.books.find()
 모든 내용 보여줍니다. 
 
@@ -29,7 +33,7 @@
 - bookstore> db.books.find().sort({title:1})  ``` 기준을 넣고자 할때 sort({ 기준}) , 오름차순 ```
 - bookstore> db.books.find().sort({title:-1}) ``` 내림차순 ``` 
 - bookstore> db.books.find().sort({title:1}).limit(3) 
-- 
+- bookstore> db.books.find({"author":/bell/i})
 
 
 

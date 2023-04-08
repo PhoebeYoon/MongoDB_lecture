@@ -65,6 +65,35 @@ bookstore> db.books.find({title :{$regex:/color/i} })
 bookstore> db.books.find({title :{$regex:/col/i} })
 ```
 
+실습을 위해 아래 문서를 삽입합니다. 
+```
+{
+  "title": "The Odyssey 1",
+  "author": "Homer",
+  "copies": 10
+},
+{
+  "title": "The Odyssey 2",
+  "author": "homer",
+  "copies": 23
+},
+{
+  "title": "The Odyssey 3",
+  "author": "HOMER",
+  "copies": 30
+}
+```
+find() 명령으로 실습해봅니다. 그런데 Odyssey뒤에 한칸 공백 있는거 주의하세요 (위에서 공백도 삽입했으니까 )   
+```
+bookstore> db.books.find({title :{$regex:/The Odyssey [1,3]/} })
+bookstore> db.books.find({title :{$regex:/The odyssey [1,3]/} })
+bookstore> db.books.find({title :{$regex:/The odyssey [1,3]/i} })
+bookstore> db.books.find({title :{$regex:/The odyssey [1-3]/i} })
+bookstore> db.books.find({title :{$regex:/The odyssey [1-3]/i,$not:/The Odyssey 2/ } })
+```
+
+
+
 
 📝 참조)
 https://www.mongodb.com/docs/manual/reference/method/db.collection.find/

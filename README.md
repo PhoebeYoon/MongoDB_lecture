@@ -36,15 +36,17 @@
 13. MongoDB는 같은 document에 다른 fields를 가질 수 있지만 같은 collection안에 있는 documents는 같은 목적를 제공하기 위해 저장됩니다
 
 ## 장-단점
-- 스키마를 사용하지 않는다는 것은 다양한 형태의 데이터를 저장할 수 있다는 말이며, 데이터 모델의 유연한 변과가 가능하다. 데이터모델이 변경가능하고 필드를 쉽게 확장할 수 있다.
+- 스키마를 사용하지 않는다는 것은 다양한 형태의 데이터를 저장할 수 있다는 말이며, 데이터 모델의 유연한 변화가 가능하다는 것입니다. 데이터모델이 변경가능하고 필드를 쉽게 확장할 수 있습니다.
 - json 구조이기 때문에 데이터를 직관적으로 이해할 수 있다
-- 비효율적인 key 중복입력될 수 있다.
-- 많은 인덱스를 사용할 수 있다
-- memory  mapped (데이터 쓰기에 os의 가상 메모리에 데이터를 넣은 후 비동기로 디스크에 기록하는 방식)을 사용한다.
+
+- 비효율적으로 key가 중복해서 입력될 수 있습니다
+- 많은 인덱스를 사용할 수 있습니다
+- memory mapped (데이터 쓰기에 os의 가상 메모리에 데이터를 넣은 후 비동기로 디스크에 기록하는 방식)을 사용합니다
 - os의 메모리를 활용하기 때문에 메모리가 차면 하드디스크로 데이터처리를 하여 속도가 급격히 느려집니다
 
 
 
+## MongoDB 구조를 간단히 살펴보면, 
 
 <img width="500" alt="스크린샷 2023-03-23 오후 3 03 15" src="https://user-images.githubusercontent.com/48478079/227118618-f2e757fc-383c-4803-9361-cb59d96358e6.png">      
 
@@ -74,9 +76,10 @@
    ]
 }
 
-```  
-- MongoDB에는 12bytes의 hexadecimal값으로 이루어진 _id가 자동으로 생성되며 각 document에서 유일한 값을 가지고 있습니다.
-12bytes 중 timestamp로4bytes, machine id로 3byte, MongoDB서버의 프로세스 id로 2bytes, 나머지 3bytes는 순차번호입니다. 이것은 레코드가 생성될때마다 값이 높아지는 것입니다.  
+```   
+
+- MongoDB에는 12bytes의 <b>hexadecimal값 </b>으로 이루어진 <b>_id </b>가 자동으로 생성되며 각 document에서 <b>유일한 값</b>을 가지고 있습니다.     
+- 12bytes 중 timestamp로4bytes, machine id로 3byte, MongoDB서버의 프로세스 id로 2bytes, 나머지 3bytes는 순차번호입니다. 그래서 document가 생성될때마다 값이 높아집니다
 - MongoDB안의 데이터베이스는 the physical container of the data. Then, in a single MongoDB server, multiple database are available, and each database has a file system and set of files in it. 
 
 

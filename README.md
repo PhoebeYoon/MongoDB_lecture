@@ -121,11 +121,3 @@ bookstore> db.bank.updateMany({},{
 bookstore> db.bank.updateMany( {}, { $rename: { 'Fullname': "name" } })
 
 ```
-
-## CRUD 정리하기
-- db.books.inserOne()
-- db.books.findOne()
-- db.books.updateOne()
-- db.books.deleteOne()
-
-

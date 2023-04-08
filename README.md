@@ -36,10 +36,33 @@ bookstore> db.getCollectionNames()
 
 
 
-```
+### $regex : 정규 표현식과 맞는 도큐먼트 선택(regular expression)
+
+db.컬렉션.find({필드 : {$regex: 정규표현식}})   
+|문자열 패턴 기호 | 설명 |
+|--- |---|
+| /a/ | /와/사이의 문자열('a')이 한개이상 존재 (1~n)
+| /^a/ | ^ 기호 바로 뒤의 문자('a')로 문자열이 시작
+| /a$/ | 문자('a')로 문자열이 끝남|
+|[a,s,...] | 대괄호안에 있는 문자 (a,s ...)들이 존재하는지 검색 | 
+
+
+
+``` 
+
+bookstore> db.books.find({ "reviews.name":{$regex:'Kim'}})  <-- Kim 대문자 K로 시작하는
+bookstore> db.books.find({ "reviews.name":{$regex:'Kim',"$options":'i'}})  <-- option를 추가해서 대소문자 구분없이 찾음
+bookstore> db.books.find({ "reviews.name":/kim/i}) <-- 간단히 이렇게도 가능합니다.
+
+
 bookstore> db.books.find({"author":/bell/i}) <-- bell 이 포함된
 bookstore> db.books.find({ "genres":{$regex:/^a/}  }) <-- a로 시작하는 
+bookstore> db.books.find({title :{$regex:/^A/} }) 
+bookstore> db.books.find({title :{$regex:/^D/} })
 bookstore> db.books.find({ "genres":{$regex:'action'}})
+bookstore> db.books.find({title :{$regex:/color/} })
+bookstore> db.books.find({title :{$regex:/color/i} })
+bookstore> db.books.find({title :{$regex:/col/i} })
 ```
 
 

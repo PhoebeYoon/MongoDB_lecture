@@ -83,6 +83,16 @@
 - MongoDB안의 데이터베이스는 the physical container of the data. Then, in a single MongoDB server, multiple database are available, and each database has a file system and set of files in it. 
 
 
+```
+test> ObjectId("507f191e810c19729de860ea").toString()
+test> newObjectId = ObjectId(32)
+ObjectId("0000002038cd6fb5aad8043c") <-- 결과
+```    
+위의 내용를 살펴보면,   
+A four byte time stamp, 00000020 는 ObjectId의 처음 4바이트는 Unix epoch 이후의 second 수 이며,  00000020이며 16진수로는 32입니다.      
+그 다음 a five byte random element, f51bb4362e      
+나머지 three byte counter, ee2a4d     
+
 ## MongoDB는 embedded 데이터모델과 정규화데이터모델의 2가지 유형의 데이터 모델을 제공한다. 
 1. embedded 모델은 관련데이터를 하나의 문서에 모두 포함하는 형태로 비정규화된 데이터 모형이다.
 ``` 
@@ -148,17 +158,7 @@ Address:
 	State: "Telangana"
 }
 ``` 
-
-```
-test> ObjectId("507f191e810c19729de860ea").toString()
-test> newObjectId = ObjectId(32)
-ObjectId("0000002038cd6fb5aad8043c"). <-- 결과
-```    
-위의 내용를 살펴보면,   
-A four byte time stamp, 00000020    
-  - ObjectId의 처음 4바이트는 Unix epoch 이후의 second 수 이며,  00000020이며 16진수로는 32입니다     
-A five byte random element, f51bb4362e      
-A three byte counter, ee2a4d         
+    
 
 
 ## JSON ( JavaScript Object Notation) 표기법

@@ -149,6 +149,18 @@ Address:
 }
 ``` 
 
+```
+test> ObjectId("507f191e810c19729de860ea").toString()
+test> newObjectId = ObjectId(32)
+ObjectId("0000002038cd6fb5aad8043c"). <-- 결과
+```    
+위의 내용를 살펴보면,   
+A four byte time stamp, 00000020    
+  - ObjectId의 처음 4바이트는 Unix epoch 이후의 second 수 이며,  00000020이며 16진수로는 32입니다     
+A five byte random element, f51bb4362e      
+A three byte counter, ee2a4d         
+
+
 ## JSON ( JavaScript Object Notation) 표기법
 - 각 객체는 {  } (중괄호)로 시작하고 끝난다.
 - JSON 배열은 대괄호 블록 [  ]으로 표기합니다

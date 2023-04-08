@@ -6,9 +6,9 @@ https://www.mongodb.com/docs/drivers/ 접속하면 응용프로그램과 MongoDB
 1. 실습할 폴더를 만듭니다 ( 예, project-mongo ) 
 2. vs code를 실행합니다
 3. vs code의 터미널창을 열고 ``` npm init ``` 
-4. 기본설정으로 진행합니다 그러면 package.json 파일이 만들어집니다.
-5. app.js파일를 생성합니다.  
-6. 터미널에서 ``` npm install express --save ```  (express 패키지를 설치합니다 )
+4. 기본설정으로 진행합니다 그러면 package.json 파일이 만들어집니다. 
+5. 터미널에서 ``` npm install express --save ```  (express 패키지를 설치합니다 )
+6. app.js파일를 생성합니다. 
 7. 아래와같이 작성합니다. 
 
 [app.js]   
@@ -39,8 +39,8 @@ app.get("/books",(req,res) =>{
 const { MongoClient} = require('mongodb')
 let dbConnetion
 module.exports = {
-  connetToDb: (cb)=>{ 
-    MongoClient.connet('mongodb://localhost:27017/bookstore')
+  connectToDb: (cb)=>{ 
+    MongoClient.connect('mongodb://localhost:27017/bookstore')
     .then( (client)=>{ 
       dbConnetion= client.db()
       return cb()
@@ -52,6 +52,7 @@ module.exports = {
   },
   getDb:()=> dbConnetion
 }
+
 ```
 작성한 후에 [app.js]의 내용을 변경합니다. 
 ``` js

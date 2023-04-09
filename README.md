@@ -26,4 +26,16 @@ node.js Driver (왼쪽 메뉴 중)선택 >'Fundamentals '> 'Connect to MongoDB' 
 
 > ODM ( Object Document Mapping)으로해 객체와 문서를 1대1로 매칭시켜줍니다. mongodb에 있는 데이터를 node.js에서 javascript객체로 사용할 수 있도록 해줍니다. 아무로 실습을 진행하면서 다시 언급될 것입니다.   
 
- 
+## MongoDB Drivers를 사용해서 간단한 예제를 진행보도록 하겠습니다
+이 예제는 mongosh를 이용해서 기초적인 mongoDB을 경험한 다음에 실습하도록 합니다.   
+1. script.js 파일을 만들고, 터미널에서   ```  npm init -y ``` 실행합니다 
+2. package.json파일이 생성됩니다. 
+3. 터미널에서  ``` npm i mongoose  ```
+4. package-lock.json 과 📁node_modules 가 생성되어 있습니다
+5. 터미널에서 ```npm i --save-dev nodemon ```
+```
+
+
+```
+
+

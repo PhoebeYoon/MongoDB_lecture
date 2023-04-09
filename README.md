@@ -36,8 +36,15 @@ node.js Driver (왼쪽 메뉴 중)선택 >'Fundamentals '> 'Connect to MongoDB' 
 6. package.json 파일을 열어서 ``` "scripts": {  "devStart": "nodemon script.js" },```  변경해줍니다  
   이렇게 주면 'npm run devStart'라고 주면 우리의 어플리케이션이 실행됩니다 
 7. [script.js] 에 " console.log('이게 보이나요? ') " 입력한 뒤 터미널에서 npm run devStart 엔터하면 콘솔창에 '이게 보이나요'라는 문구가 출력되는지 확인하세요 
-8. [script.js]파일이 작동되느닞 확인되었으니 데이터베이스를 연결하도록 하겠습니다 
-[script.js].  
+
+
+#### 여기서 mongoDB 의 스키마에 대해 알아봅시다 
+우리는 mongodb에는 스키마가 없다고 설명했습니다. 스키마가 없기 때문에 데이터를 유연하게 처리할 수 있지만 스키마가 없기 때문에 겪어야하는 문제들이 있었습니다. mongodb에서는 문서에 아무내용이나 넣어도 심지어 같은 필드이지만 자료형이 다른것도 허용되고 오타가 입력되어서 오류로 인식하지 않기때문에 혼란스러운면이 있었습니다. 그래서 mongoose에 Schema를 적용해서 데이터 구조를 정의할 수 있게 하였습니다.   
+
+그래서 mongoose 에서는 스키마(schema)와 모델(model)이라는 개념이 존재하는데 스키마는 해당 컬렉션의 문서에 어떤 종류의 값이 들어가는지를 정의하고 모델은 
+
+9. 데이터베이스를 연결하고 Schema를 작성해보도록 하겠습니다. User.js 파일을 생성합니다.
+[User.js]  
 ```
 
 

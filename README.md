@@ -59,7 +59,6 @@ async function run(){
       address:{city:'Jeju', street :'Dulegil 3ro'
      },
   })
-  user.createAt =5
   await user.save()
   console.log(user)
 } catch (e){

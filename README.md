@@ -55,6 +55,12 @@ const userSchema = new mongoose.Schema({
 // model() 함수입니다. 스키마를 통해서 인스턴스를 만듭니다. userSchema 스키마를 이용해 User 라는 인스턴스를 생성했습니다 
 module.export = mongoose.model('User', 'userSchema') 
 ```    
-module.export는 이미 node.js에서 다루기 때문에 여기서는 설명을 생략합니다.   
-
+module.export는 이미 node.js에서 다루기 때문에 여기서는 설명을 생략합니다.     
+이제 script.js 내용을 바꿔야 하겠지요. User.js에서 디비를 접속하는 코드를 생성했으니 서버에도 이 사실을 알려야겠지요. 아래와 같이 추가해줍니다   
+[script.js]    
+```
+const mongoose = require('mongoose')
+const User = require("./User")
+mongoose.connect('mongodb://localhost/testdb')
+```
 

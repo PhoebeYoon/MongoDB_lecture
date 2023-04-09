@@ -38,18 +38,23 @@ node.js Driver (왼쪽 메뉴 중)선택 >'Fundamentals '> 'Connect to MongoDB' 
 7. [script.js] 에 " console.log('이게 보이나요? ') " 입력한 뒤 터미널에서 npm run devStart 엔터하면 콘솔창에 '이게 보이나요'라는 문구가 출력되는지 확인하세요 
 
 
-#### 여기서 mongoDB 의 스키마에 대해 알아봅시다 
+#### 여기서 mongoDB 의 스키마와 모델에 대해 알아보겠습니다  
 우리는 mongodb에는 스키마가 없다고 설명했습니다. 스키마가 없기 때문에 데이터를 유연하게 처리할 수 있지만 스키마가 없기 때문에 겪어야하는 문제들이 있었습니다. mongodb에서는 문서에 아무내용이나 넣어도 심지어 같은 필드이지만 자료형이 다른것도 허용되고 오타가 입력되어서 오류로 인식하지 않기때문에 혼란스러운면이 있었습니다. 그래서 mongoose에 Schema를 적용해서 데이터 구조를 정의할 수 있게 하였습니다.   
 
-그래서 mongoose 에서는 스키마(schema)와 모델(model)이라는 개념이 존재하는데 스키마는 해당 컬렉션의 문서에 어떤 종류의 값이 들어가는지를 정의하고 모델은 
+그래서 mongoose 에서는 스키마(schema)와 모델(model)이라는 개념이 존재하는데 스키마는 해당 컬렉션의 문서에 어떤 종류의 값이 들어가는지를 정의하고 모델은 스키마를 통해서 만드는 인스턴스입니다.
 
-9. 데이터베이스를 연결하고 Schema를 작성해보도록 하겠습니다. User.js 파일을 생성합니다.
-[User.js]  
+9. 데이터베이스를 연결하고 Schema를 작성해보도록 하겠습니다. User.js 파일을 생성합니다.    
+[User.js]    
 ```
-
-
-
-```
-
+const mongoose = require('mongoose')
+// 스키마 생성
+const userSchema = new mongoose.Schema({
+  name:String,
+  age : Number
+})
+// model() 함수입니다. 스키마를 통해서 인스턴스를 만듭니다. userSchema 스키마를 이용해 User 라는 인스턴스를 생성했습니다 
+module.export = mongoose.model('User', 'userSchema') 
+```    
+module.export는 이미 node.js에서 다루기 때문에 여기서는 설명을 생략합니다.   
 
 

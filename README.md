@@ -43,7 +43,7 @@ node.js Driver (왼쪽 메뉴 중)선택 >'Fundamentals '> 'Connect to MongoDB' 
 
 그래서 mongoose 에서는 스키마(schema)와 모델(model)이라는 개념이 존재하는데 스키마는 해당 컬렉션의 문서에 어떤 종류의 값이 들어가는지를 정의하고 모델은 스키마를 통해서 만드는 인스턴스입니다.
 
-9. 데이터베이스를 연결하고 Schema를 작성해보도록 하겠습니다. User.js 파일을 생성합니다.    
+8. 데이터베이스를 연결하고 Schema를 작성해보도록 하겠습니다. User.js 파일을 생성합니다.    
 [User.js]    
 ```
 const mongoose = require('mongoose')

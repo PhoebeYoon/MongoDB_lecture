@@ -92,6 +92,14 @@ try {
 14. id말고 name으로 검색해 보겠습니다.
 기존 코드 중에서 findById 를 주석처리하고 아래 내용으로 변경해 보도록 하겠습니다. 
 ```  const user = await User.find({ name :'Lee'})  ``` 
+15. ``` const user = await User.findOne({ name :'Lee'}) ```   
+16. ``` const user = await User.exists({name:"Lee"} ) ``` id값이 출력되는지 확인합니다 
+17. ```const user= await User.deleteOne({name :'Lee'}) ```   
 
+### where는 쿼리를 만들고 전달된 조건을 적용한 다음 쿼리를 반환합니다
+https://mongoosejs.com/docs/api/model.html 사이트에서 더 많은 명령어들을 찾을 수 있습니다.    
+( Model.where() 부분을 참조하시면 됩니다.  )
+[script.js] 에서 async function run(){} 부분에 넣으시면 됩니다   
+``` const user = await User.where('name').equals('Park') ```
 
 

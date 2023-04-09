@@ -65,4 +65,33 @@ async function run(){
     console.log(e.message)
   }
 }  
-```
+```     
+콘솔창에 출력된 내용을 보면   
+<img width="360" alt="스크린샷 2023-04-09 오후 8 03 57" src="https://user-images.githubusercontent.com/48478079/230768831-4c26d19c-081b-4ec0-965f-7b7f2c99f5ee.png">
+
+13. 이제 찾기( findById)를 사용해보도록 하겠습니다.    
+기존 내용을 주석처리하고 아래 내용을 입력합니다. 그리고 기존 문서중에서 아무 _id를 복사해서 넣어주세요 
+[script.js]   
+```js
+const mongoose = require('mongoose')
+const User = require("./User")
+mongoose.connect('mongodb://localhost/testdb')
+
+run()
+async function run(){
+try {
+  const user = await User.findById('64329547f32467280adacb27')
+  console.log(user)
+} catch (e){
+  console.log(e.message)
+}
+}
+```    
+<img width="350" alt="스크린샷 2023-04-09 오후 8 15 12" src="https://user-images.githubusercontent.com/48478079/230769319-6748d48f-356a-4635-bad9-8be9ee42f2d1.png">
+
+14. id말고 name으로 검색해 보겠습니다.
+기존 코드 중에서 findById 를 주석처리하고 아래 내용으로 변경해 보도록 하겠습니다. 
+```  const user = await User.find({ name :'Lee'})  ``` 
+
+
+

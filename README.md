@@ -74,4 +74,21 @@ user.save().then(()=> console.log('New 유저가 생성됨'))
 그럼 여기서 MongoDB Compass 를 실행시켜서 보면 아래와 같이 컬렉션과 문서가 생성되어 있을 것입니다.   
 
 <img width="500" alt="스크린샷 2023-04-09 오후 3 32 11" src="https://user-images.githubusercontent.com/48478079/230758268-cc0386de-9cee-4e70-bcd7-4b7180b7527f.png">
+9. 프로미스를 이용해서 작성해보았는데 이제 async function으로 만들어보겠습니다. 
+[script.js]를 아래처럼 변경해주세요 
+```
+const mongoose = require('mongoose')
+const User = require("./User")
+mongoose.connect('mongodb://localhost/testdb')
+
+run()
+async function run(){
+  const user = new User({name:'Kang', age: 31})
+  await user.save()
+  console.log(user)
+}
+```    
+실행되었다면 터미널에 
+<img width="400" alt="스크린샷 2023-04-09 오후 3 39 14" src="https://user-images.githubusercontent.com/48478079/230758480-fea999a7-7e65-4801-92e1-2d162c026de4.png">
+
 

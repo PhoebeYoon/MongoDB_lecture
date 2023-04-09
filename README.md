@@ -44,6 +44,7 @@ node.js Driver (왼쪽 메뉴 중)선택 >'Fundamentals '> 'Connect to MongoDB' 
 그래서 mongoose 에서는 스키마(schema)와 모델(model)이라는 개념이 존재하는데 스키마는 해당 컬렉션의 문서에 어떤 종류의 값이 들어가는지를 정의하고 모델은 스키마를 통해서 만드는 인스턴스입니다.
 
 8. 데이터베이스를 연결하고 Schema를 작성해보도록 하겠습니다. User.js 파일을 생성합니다.    
+
 [User.js]    
 ```
 const mongoose = require('mongoose')
@@ -56,11 +57,21 @@ const userSchema = new mongoose.Schema({
 module.exports = mongoose.model('User', userSchema) 
 ```    
 module.export는 이미 node.js에서 다루기 때문에 여기서는 설명을 생략합니다.     
-이제 script.js 내용을 바꿔야 하겠지요. User.js에서 디비를 접속하는 코드를 생성했으니 서버에도 이 사실을 알려야겠지요. 아래와 같이 추가해줍니다   
+이제 script.js 내용을 바꿔야 하겠지요. User.js에서 디비를 접속하는 코드를 생성했으니 서버에도 이 사실을 알려야겠지요. 아래와 같이 추가해줍니다  
+
 [script.js]    
 ```
 const mongoose = require('mongoose')
 const User = require("./User")
 mongoose.connect('mongodb://localhost/testdb')
-```
+// 새로운 문서생성
+const user = new User({name:'Cho', age: 24})
+// 새로운 유저를 생성했지만 아직 디비에 저장되지는 않았습니다. 
+user.save().then(()=> console.log('New 유저가 생성됨'))
+```  
+
+여기까지 하고 터미널을 보면 'New 유저가 생성됨' 문구가 출력됩니다.  여기까지 잘 되었나요?    
+그럼 여기서 MongoDB Compass 를 실행시켜서 보면 아래와 같이 컬렉션과 문서가 생성되어 있을 것입니다.   
+
+<img width="500" alt="스크린샷 2023-04-09 오후 3 32 11" src="https://user-images.githubusercontent.com/48478079/230758268-cc0386de-9cee-4e70-bcd7-4b7180b7527f.png">
 

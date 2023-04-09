@@ -111,4 +111,42 @@ async function run(){
 ```
 자, 이쯤에서 실습도중에 같은 코드를 여러번 실행하는 탓에 같은 문서가 여러번 저장되었을 것입니다. 본인이 할 수 있는 방법을 사용하여 여러번 저장된 문서를 정리해주세요.  잠시 기다리겠습니다.   
 
+11. [User.js]에서 유저에 사용될 필드를 추가해보겠습니다.
+``` js
+const mongoose = require('mongoose')
+
+const userSchema = new mongoose.Schema({
+  name:String,
+  age : Number,
+  email:String,
+  createAt : Date,
+  updateAt : Date,
+  hobbies : [String],
+  address :{
+    city:String,
+    street:String
+  }
+})
+module.exports = mongoose.model('User', userSchema) 
+```
+[script.js]
+```js
+const mongoose = require('mongoose')
+const User = require("./User")
+mongoose.connect('mongodb://localhost/testdb')
+
+run()
+async function run(){
+  const user = await User.create({
+    name:'Lee', 
+    age: 29,
+    email: 'Worker1@company.co.kr',
+    hobbies:['Running','Swimming'],
+    address:{city: 'Seoul', street :'Kangdam-1dong'}
+})
+  console.log(user)
+}
+```     
+<img width="350" alt="스크린샷 2023-04-09 오후 4 08 26" src="https://user-images.githubusercontent.com/48478079/230759465-1aea6cdb-0ece-4224-b4c1-2e68de6d1474.png">
+
 

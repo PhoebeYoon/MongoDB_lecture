@@ -34,6 +34,15 @@ node.js Driver (왼쪽 메뉴 중)선택 >'Fundamentals '> 'Connect to MongoDB' 
 4. package-lock.json 과 📁node_modules 가 생성되어 있습니다
 5. 터미널에서 ```npm i --save-dev nodemon ```    
 6. package.json 파일을 열어서 ``` "scripts": {  "devStart": "nodemon script.js" },```  변경해줍니다  
+  이렇게 주면 'npm run devStart'라고 주면 우리의 어플리케이션이 실행됩니다 
+7. [script.js] 에 " console.log('이게 보이나요? ') " 입력한 뒤 터미널에서 npm run devStart 엔터하면 콘솔창에 '이게 보이나요'라는 문구가 출력되는지 확인하세요 
+8. [script.js]파일이 작동되느닞 확인되었으니 데이터베이스를 연결하도록 하겠습니다 
+[script.js].  
+```
+
+
+
+```
 
 
 

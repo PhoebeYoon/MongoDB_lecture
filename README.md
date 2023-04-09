@@ -32,10 +32,8 @@ node.js Driver (왼쪽 메뉴 중)선택 >'Fundamentals '> 'Connect to MongoDB' 
 2. package.json파일이 생성됩니다. 
 3. 터미널에서  ``` npm i mongoose  ```
 4. package-lock.json 과 📁node_modules 가 생성되어 있습니다
-5. 터미널에서 ```npm i --save-dev nodemon ```
-```
+5. 터미널에서 ```npm i --save-dev nodemon ```    
+6. package.json 파일을 열어서 ``` "scripts": {  "devStart": "nodemon script.js" },```  변경해줍니다  
 
-
-```
 
 

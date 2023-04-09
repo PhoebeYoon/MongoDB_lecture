@@ -109,8 +109,6 @@ const user = await User.where('age')
 .where('name')
 .equals("Cho")
 ```    
-
-
-
-
+이번 수업은 여기까지 진행합니다. 이제 mongoDB의 대략적인 것을 이해하고 경험도 하셨을 것입니다.    
+다음 수업에서는 localhost를 이용한 코드로 진행하겠습니다.   
 

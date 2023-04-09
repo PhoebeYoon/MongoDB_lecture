@@ -60,7 +60,7 @@ module.export는 이미 node.js에서 다루기 때문에 여기서는 설명을
 이제 script.js 내용을 바꿔야 하겠지요. User.js에서 디비를 접속하는 코드를 생성했으니 서버에도 이 사실을 알려야겠지요. 아래와 같이 추가해줍니다  
 
 [script.js]    
-```
+``` js
 const mongoose = require('mongoose')
 const User = require("./User")
 mongoose.connect('mongodb://localhost/testdb')
@@ -78,7 +78,7 @@ user.save().then(()=> console.log('New 유저가 생성됨'))
 9. 프로미스를 이용해서 작성해보았는데 이제 async function으로 만들어보겠습니다.   
 [script.js]를 아래처럼 변경해주세요 
 
-```
+``` js
 const mongoose = require('mongoose')
 const User = require("./User")
 mongoose.connect('mongodb://localhost/testdb')
@@ -92,6 +92,22 @@ async function run(){
 ```    
 
 실행되었다면 터미널에 아래와 같이 나옵니다.     
-<img width="300" alt="스크린샷 2023-04-09 오후 3 39 14" src="https://user-images.githubusercontent.com/48478079/230758480-fea999a7-7e65-4801-92e1-2d162c026de4.png">
+<img width="300" alt="스크린샷 2023-04-09 오후 3 39 14" src="https://user-images.githubusercontent.com/48478079/230758480-fea999a7-7e65-4801-92e1-2d162c026de4.png">     
 여기에 있는 _v는_ mongoose가 트래킹하는 정보(versioning) 이니까 우리는 신경쓰지 않아도 됩니다.  
+
+10. 9번에 내용중 새로운 user를 생성하는 다른 방법은 create() 이용하는 것입니다.   
+``` js
+const mongoose = require('mongoose')
+const User = require("./User")
+mongoose.connect('mongodb://localhost/testdb')
+
+run()
+async function run(){
+  const user = await User.create({name:'Park', age: 38})
+  // const user = new User({name:'Kang', age: 31})
+  // await user.save()
+  console.log(user)
+}
+
+```
 

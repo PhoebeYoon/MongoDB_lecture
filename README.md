@@ -100,6 +100,17 @@ try {
 https://mongoosejs.com/docs/api/model.html 사이트에서 더 많은 명령어들을 찾을 수 있습니다.
 ( Model.where() 부분을 참조하시면 됩니다.)     
 [script.js] 에서 async function run(){} 부분에 넣으시면 됩니다   
-``` const user = await User.where('name').equals('Park') ```
+1. ```js  const user = await User.where('name').equals('Park') ```  
+2. 
+``` js
+const user = await User.where('age')
+.gt(20)
+.lt(40)
+.where('name')
+.equals("Cho")
+```    
+
+
+
 
 

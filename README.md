@@ -1,5 +1,11 @@
 ###### :cactus:  MongoDB_lecture
 
+## About MongoDB
+<img width="200" alt="스크린샷 2023-04-10 오후 12 29 58" src="https://user-images.githubusercontent.com/48478079/230819976-85332133-8b42-4759-abf9-c7ce87ccc2d8.png">. 
+- 실습을 위해 필요한 것들:  javascript, Install node.js, vs code
+ 
+
+
 
 ## 용어설명
 1. Document : 몽고디비의 핵심은 정렬된 키와 연결된 값의 집합으로 이루어진 Document(도큐먼트)입니다. 몽고디비의 도큐먼트는 자바스크립트의 객체형태인 key/value로 이루어져있습니다.

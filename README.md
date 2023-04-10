@@ -1,5 +1,8 @@
 ###### :cactus:  MongoDB_lecture
  
+MongoDB 명령 매뉴얼 : https://www.mongodb.com/docs/manual/  또는   
+mongodb 사이트 > Resources > Server > Reference ( 왼쪽패널)
+ 
 #### 우리는 Node.js가 이미 설치되었다는 가정하에 다음 내용을 진행하겠습니다. 
 1. 실습할 폴더를 만듭니다 ( 예, project-mongo ) 
 2. vs code를 실행합니다
@@ -49,6 +52,11 @@ module.exports = {
      })
   },
   getDb:()=> dbConnetion
+  // getDb:()=> { 
+  //   console.log("-------")
+  //   console.log(dbConnetion) 리턴 DB connection
+  // }
+  
 }
 
 ```

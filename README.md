@@ -3,6 +3,9 @@
 [app.js]에 다음의 내용을 추가해줍니다.  
 
 ``` js
+// 맨위의 추가하세요 
+const { ObjectId} = require('mongodb')
+
 app.get('/books/:id', (req, res) => {
 
   if (ObjectId.isValid(req.params.id)) {

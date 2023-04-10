@@ -113,7 +113,7 @@ app.get('/books', (req, res) => {
   let books = []
 
   db.collection('books')
-    .find()
+    .find() 
     .sort({author: 1})
     .forEach(book => books.push(book))
     .then(() => {
@@ -127,3 +127,6 @@ app.get('/books', (req, res) => {
 ```   
 실행시에는 브라우저의 url에 ``` http://localhost:3000/books ``` 입력후에 브라우저 내용에 모든 document의 내용이 보여지면 됩니다.  
 <img width="231" alt="스크린샷 2023-03-25 오전 9 18 07" src="https://user-images.githubusercontent.com/48478079/227666831-ea551dde-49a9-479c-afa4-815cec4a18aa.png">
+
+📝 db.collection('books') books 컬렉션에 접속해서 find()를 실행하시만 그 안의 데이터를 가져오는것이 아니라 cursor라는 것을 반환합니다. 우리가 사용하는 마우스의 cursor 가 아닙니다.  
+

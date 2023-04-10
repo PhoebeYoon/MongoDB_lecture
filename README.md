@@ -53,8 +53,34 @@ app.post('/books', (req,res)=>{
 })
 
 ```   
-위의 내용을 POSTMAN으로 만들어보겠습니다 
+위의 내용을 POSTMAN으로 만들어보겠습니다. 추가할 내용에는 아래 데이터를 사용하세요    
+```
+{
+"title" : "구름빵",
+"author" :"황미나",
+"rating":9,
+"pages": 35,
+"genres" :[
+    "fantasy",
+    "children"
+],
+"reviews":[
+    {
+        "name":"Yoon",
+        "body":"Worth to read"
+    },
+    {
+        "name":"kim",
+        "body": "Very good"
+    }
+]
+} 
+```
+
+
 
 <img width="537" alt="스크린샷 2023-03-25 오전 10 40 55" src="https://user-images.githubusercontent.com/48478079/227679034-51169747-3272-47f2-af2f-aeb23bd52d0d.png">    
 Send버튼 후에 아래쪽부분에서 insertedId까지 나왔다면   
-왼쪽메뉴에서 모든 문서를 보여주는 url를 선택한 뒤 해당 문서가 삽입되어 있는지 확인합니다  
+왼쪽메뉴에서 모든 문서를 보여주는 url를 선택한 뒤 해당 문서가 삽입되어 있는지 확인합니다.    
+위의 예제에서 문서1개만 검색했던 get명령을 이용하여 검색해 봅니다. 생성된 "insertedId" 를 사용하면 됩니다.  
+

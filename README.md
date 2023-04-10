@@ -3,18 +3,20 @@
 [app.js] 
 ```js
 // delete
-app.delete('/books/:id', (req,res)=>{
+app.delete('/books/:id', (req, res) => {
+  
   if (ObjectId.isValid(req.params.id)) {
-    db.collection('books')
-    .deleteOne({ _id: ObjectId(req.params.id)})
-    .then( result =>{
+  db.collection('books')
+    .deleteOne({ _id: new ObjectId(req.params.id) })
+    .then(result => {
       res.status(200).json(result)
     })
-    .catch(err=>{
-      res.status(500).json({error :"Could not delete the document "})
+    .catch(err => {
+      res.status(500).json({error: 'Could not delete document'})
     })
-  }else {
-    res.status(500).json({error: 'Not a valid doc id'})
+
+  } else {
+    res.status(500).json({error: 'Could not delete document'})
   }
 })
 ```

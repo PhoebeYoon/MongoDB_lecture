@@ -83,4 +83,5 @@ app.post('/books', (req,res)=>{
 Send버튼 후에 아래쪽부분에서 insertedId까지 나왔다면   
 왼쪽메뉴에서 모든 문서를 보여주는 url를 선택한 뒤 해당 문서가 삽입되어 있는지 확인합니다.    
 위의 예제에서 문서1개만 검색했던 get명령을 이용하여 검색해 봅니다. 생성된 "insertedId" 를 사용하면 됩니다.  
+<img width="400" alt="스크린샷 2023-04-10 오후 4 48 23" src="https://user-images.githubusercontent.com/48478079/230853955-422b1bc5-2bd9-4f6e-aa3b-4dee874aff7f.png">
 

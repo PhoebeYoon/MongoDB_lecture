@@ -98,3 +98,18 @@ https://www.mongodb.com/docs/manual/reference/method/db.collection.find/
 ## 배열에서 사용하는 요소찾기
 - $elemMatch 
 
+
+
+## MongoDB에서 cursor란?
+- MongoDB에서 find() 메소드 실행후에 반환되는 문서의 MongoDB의 컬렉션입니다.
+- 이것은 특정 인덱스값을 가리키는 포인터와 같습니다.
+- find()메소드는 결과를 반복하는데 사용할 수 있는 cursor object를 반환합니다 
+- cursor는 불러온 모든 레코드를 반환하는데 사용된 포인터입니다.  그래서 인덱스를 설정하고 갯수를 셀수 있습니다. 
+- cursor를 이용하여 불러온 내용을 읽을 수도 있습니다. 
+- 다음을 실행해 봅니다
+``` 
+use bookstore
+var cur=db.books.find() 
+cur.next() # 첫번째 document가 출력됩니다
+cur.next() # 두번째 document가 출력됩니다
+``` 

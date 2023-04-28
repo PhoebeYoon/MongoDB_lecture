@@ -1,11 +1,12 @@
 ###### :cactus:  MongoDB_lecture
 
 ## MongoDB Atlas vs mongoose
-- MongoDB Atlas는 MongoDB의 완전 관리형 클라우드 데이터베이스 서비스입니다. 이 서비스는 MongoDB 데이터베이스를 클라우드에서 호스팅 하고 관리하는 것을 중심으로 하며, 개발자 및 기업이 손쉽게 애플리케이션을 빌드하고 배포할 수 있도록 지원합니다   
-- mongoose : 몽구스라고 일컫는데, 몽고DB와 Express.js 웹 애플리케이션 프레임워크 간 연결을 생성하는 자바스크립트 객체 지향 프로그래밍 라이브러리이다
+- <b>MongoDB Atlas</b>는 MongoDB의 완전 관리형 클라우드 데이터베이스 서비스입니다. 이 서비스는 MongoDB 데이터베이스를 클라우드에서 호스팅 하고 관리하는 것을 중심으로 하며, 개발자 및 기업이 손쉽게 애플리케이션을 빌드하고 배포할 수 있도록 지원합니다   
+- <b>mongoose</b> : 몽구스라고 일컫는데, 몽고DB와 Express.js 웹 애플리케이션 프레임워크 간 연결을 생성하는 자바스크립트 객체 지향 프로그래밍 라이브러리이다
+
+-  <b>MongoDB Compass</b>는 MongoDB 데이터를 쿼리, 최적화 및 분석할 수 있는 대화형 도구입니다. 
 
 
-우리는 MongoDB Community Server 를 이용한 것입니다 아래의 링크를 클릭해서 로컬에 설치하도록 하겠습니다.
 ## MongoDB 설치방법 (mac 버전입니다 )
 
 - https://www.mongodb.com/try/download/community    

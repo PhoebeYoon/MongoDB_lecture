@@ -64,7 +64,7 @@ acknowledged: true 는 성공적으로 실행했다는 의미이며
 insertedIds 각 문서에 대한 _id값을 포함하는 배열를 리턴합니다.  
 
 mdb> db.getCollectionNames()
-mdb> db.inventory.find(). <-- inventory 컬렉션에 들어있는 모든 데이터를 출력합니다. 
+mdb> db.inventory.find() <-- inventory 컬렉션에 들어있는 모든 데이터를 출력합니다. 
 ```   
 컬렉션이름을 언급하면서 데이터를 삽입했습니다. 당연히 컬렉션이 만들어지고 데이타 (문서)가 해당 컬렉션에 삽입되었습니다.    
 insert(), insertOne(), insertMany() 를 사용해 보았는데 이름에서 알수있듯이 One이 붙은 것은 하나만 삽입, Many가 붙은것은 여러개를 삽입하겠다는 것입니다. 그래서 Many가 사용된 형식을 보면 대괄호[ ]로 데이타를 둘러쌓습니다. 

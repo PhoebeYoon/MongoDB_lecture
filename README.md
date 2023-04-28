@@ -5,7 +5,9 @@
 
 ## MongoDB compass 설치하기   
 Compass는 MongoDB 데이터를 쿼리, 최적화 및 분석할 수 있는 대화형 도구입니다. 중요한 인사이트를 찾아내고, 드래그 앤 드롭으로 파이프라인을 구축하는 등 여러 가지 기능을 제공합니다.   
-https://www.mongodb.com/try/download/compass 다운로드 후 어플리케이션으로 이동하고 실행합니다. 
+https://www.mongodb.com/try/download/compass 다운로드 후 어플리케이션으로 이동하고 실행합니다.   
+
+##### 우리는 이전에 compass를 함께 설치했습니다. 프로그램 목록에서 :file_folder:MongoDB Inc 에서 찾을 수 있습니다.  
 <img width="600" alt="스크린샷 2023-04-08 오후 12 43 27" src="https://user-images.githubusercontent.com/48478079/230701733-9b68148d-46be-4271-aa6b-27b28a10752d.png">
 
  화면 중앙에 있는  local 주소를 확인하세요. 본인컴의 url 입니다. 그리고  오른쪽에 있는 녹색의 connet 버튼 클릭합니다.   
@@ -13,17 +15,21 @@ https://www.mongodb.com/try/download/compass 다운로드 후 어플리케이션
  
  <img width="250" alt="스크린샷 2023-04-08 오후 12 46 23" src="https://user-images.githubusercontent.com/48478079/230701841-cb38af39-41c2-4e19-8577-afc7571e93b5.png">
 
+
  
 이렇게 나오지 않는다면 메뉴에서 (윈도우 경우) 'Services > MondoDB server를 찾아 실행중인지 확인 '   
 
-## database 만들어보기  
-1. 
-<img width="400" alt="스크린샷 2023-04-08 오후 12 50 10" src="https://user-images.githubusercontent.com/48478079/230701960-fb5df902-2c21-4eac-9916-d537a9cb3e57.png">
+## database 만들어보기   
+몽고쉘에서 만들었던 mydb를 compass 를 사용해서 다시 만들어보겠습니다. 이전에 데이터를 저장해 놓았다면 복사해서 사용하셔도 좋습니다.    
+위쪽에 있는 :heavy_plus_sign:Create database 버튼을 클릭합니다.   
+1.  
+<img width="400" alt="스크린샷 2023-04-08 오후 12 50 10" src="https://user-images.githubusercontent.com/48478079/230701960-fb5df902-2c21-4eac-9916-d537a9cb3e57.png">  
 
-2. 
+2.   
 <img width="381" alt="스크린샷 2023-04-08 오후 12 53 12" src="https://user-images.githubusercontent.com/48478079/230702069-82c2682f-e248-40d6-829e-d6ed91cc5e4b.png">
 아까 사용했던 데이터 중 1개를 먼저 입력해 보세요. 아마도  여러분은 이런 <img width="364" alt="스크린샷 2023-04-08 오후 1 02 37" src="https://user-images.githubusercontent.com/48478079/230702353-b26b34de-33cc-4306-9772-29b0abbd3e61.png">경고메시지가 나올것입니다.   
-이 에러메시지가 사라지게 해보세요. 데이터를 어떻게 입력해야 하는지 잠시 생각해보시기 바랍니다.  
+이 에러메시지가 사라지게 해보세요. 데이터를 어떻게 입력해야 하는지 잠시 생각해보시기 바랍니다.   
+
 
 3. <b>그냥 습관적으로 복사붙여넣기를 하다보면 알아야 내용을 놓칠수가 있습니다. </b>여러번 시도해보신 분들만 아래 내용대로 해 보세요 
 ```

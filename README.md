@@ -43,7 +43,8 @@
 
 ## 장-단점
 - 스키마를 사용하지 않는다는 것은 다양한 형태의 데이터를 저장할 수 있다는 말이며, 데이터 모델의 유연한 변화가 가능하다는 것입니다. 데이터모델이 변경가능하고 필드를 쉽게 확장할 수 있습니다.
-- json 구조이기 때문에 데이터를 직관적으로 이해할 수 있다
+- json 구조이기 때문에 데이터를 직관적으로 이해할 수 있습니다.
+
 
 - 비효율적으로 key가 중복해서 입력될 수 있습니다
 - 많은 인덱스를 사용할 수 있습니다
@@ -59,11 +60,11 @@
 간단한 document의 구조를 아래와 같다.  
 ``` 
 {
-   _id: ObjectId(7df78ad8902c)
+   _id: ObjectId(7df78ad8902c),
    title: 'MongoDB Overview', 
    description: 'MongoDB is no sql database',
    by: 'tutorials point',
-   url: 'http://www.tutorialspoint.com',
+   url: 'http://www.example.com',
    tags: ['mongodb', 'database', 'NoSQL'],
    likes: 100, 
    comments: [	

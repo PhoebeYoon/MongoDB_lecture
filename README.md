@@ -124,7 +124,8 @@ bookstore> db.books.insertOne(demo)
 이렇게하고 compass 확인해보면 새로운 collection이 만들어져 있습니다. compass에서 보이지 않는다면 refresh를 하면 됩니다.  
 <img width="200" alt="스크린샷 2023-03-24 오전 11 43 17" src="https://user-images.githubusercontent.com/48478079/227410999-bb1341c7-726d-42f3-bd3e-b9f5fe7fd979.png">
 
-이제 삭제해 보도록 하겠습니다. 문서를 삭제할때는 'delete' 이고 collection를 삭제할때는 'drop' 이라는 명령입니다. 
+이제 삭제해 보도록 하겠습니다. 문서를 삭제할때는 'delete' 이고 collection를 삭제할때는 'drop' 이라는 명령입니다.    
+authors 컬렉션을 삭제해 보겠습니다. authors 옆에 있는 점3개를 클릭합니다   
 
 <img width="445" alt="스크린샷 2023-03-24 오전 11 45 56" src="https://user-images.githubusercontent.com/48478079/227411328-8339e004-80b0-45e6-b492-3054db566715.png">
 
@@ -163,7 +164,7 @@ bookstore> db.books.insertMany([ 엔터
 ``` js
 test> use bookstore
 bookstore> db.getCollectionNames()
-bookstore> db.books.find()
+bookstore> db.books.find() <-- 컬렉션내 문서의 내용을 보고 싶으면 find()를 사용합니다 
 ```
 4. db.collection이름.find(query, projection)       
 - query :Option. document selection criteria(기준). criteria 없이 collection내의 모든 document를 select하는 경우에는 생략하거나 { }를 전달한다. 

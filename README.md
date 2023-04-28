@@ -6,15 +6,14 @@
 
 -  <b>MongoDB Compass</b>는 MongoDB 데이터를 쿼리, 최적화 및 분석할 수 있는 대화형 도구입니다. 
 
-
 ## MongoDB 설치방법 (mac 버전입니다 )
 
 - https://www.mongodb.com/try/download/community    
 ( 또는 https://www.mongodb.com/  > Products 클릭 > Community Server 클릭 )
 - Version, Platform , Package를 본인에게 맞게 선택하세요 
 - Download 버튼 클릭 (msi 파일을 다운로드 합니다)
-- 그리고 설치화면을 따라 진행합니다. 
-- 설치가 되었다면 윈도우 사용자는 3. 📎 으로 넘어가세요  
+- 그리고 설치화면을 따라 진행하다가 >'Choose Setup Type'에서 "Complete'클릭
+- 설치가 되었다면 ( 여기서 윈도우 사용자는 📎 으로 넘어가세요)   
 - Mac에서 설치시 '확인되지 않은 개발자'로 나오면서 설치가 되지 않는다면 사과 > 시스템설정 > 개인정보 보호 및 보안 > 보안 : App Store 로 바꿔서 실행하세요
 
 - ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" ``` 
@@ -32,11 +31,25 @@ export PATH=${PATH}:${HOMEBREW_HOME}/bin:${MYSQL_HOME}/bin
 - 잘 되었는지 확인하기위해 ``` brew -v ```  숫자가 나오면 잘 된것입니다. 이제 mongoDB를 설치하도록 하겠습니다. 
 1. brew tap mongodb/brew
 2. brew install mongodb-community    
-3. mongosh 엔터 📎   
-실행되면 검정화면에 노란색 줄무늬와 함께 ``` test> ``` 가 나옵니다 
+
+3. mongosh 엔터 
+
+실행되면 검정화면에 노란색 줄무늬와 함께 ``` test> ``` 가 나옵니다  
+  
 <img width="273" alt="스크린샷 2023-03-23 오후 9 45 28" src="https://user-images.githubusercontent.com/48478079/227207744-7ee146d5-628c-44e5-af66-8d9f3ea17aad.png">   
 여기까지는 shell 방식으로 설치를 한것입니다     
 
+
+
+###  📎 윈도우 사용자: 
+ 1. C:\Program Files\MongoDB\Server\ {버전} \bin 복사해서 환경변수 path에 등록합니다.
+ 2. 우리가 사용할 MongoDB Shell 은 조금전에 설치한 몽고디비에는 포함되어 있지 않아서 따로 설치가 필요합니다.
+ 3. https://www.mongodb.com/docs/mongodb-shell/install/ 이동합니다.
+ 4. .msi 또는 .zip 파일을 다운로드 받아 설치합니다. (우리는 기존 몽고디비를 설치했던 폴더에 압축을 해제합니다)
+ 5. 해당 폴더의 \bin 폴더까지의 경로를 복사해서 환경변수에 등록해 줍니다.
+ 6. cmd > mongosh 엔터하면 ```>test>_    ``` 가 나타납니다.  설치가 완료된 것입니다.     
+
+📍우리는 이제까지 몽고디비와 몽고디비를 관리하는 몽고셀 프로그램을 설치한 것입니다
 
 MongoDB는 자바스크립트 플랫폼을 이용하기 때문에 일반 터미널에서 아래와 같이 사용할 수도 있습니다.
 ``` 

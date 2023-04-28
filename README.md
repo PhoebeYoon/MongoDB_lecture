@@ -1,11 +1,7 @@
 ###### :cactus:  MongoDB_lecture
    
 
-## bookstore.books database 만들어보세요
-<img width="400" alt="스크린샷 2023-04-08 오후 12 50 10" src="https://user-images.githubusercontent.com/48478079/230701960-fb5df902-2c21-4eac-9916-d537a9cb3e57.png">
-
-
-
+## bookstore.books database 만들어보세요  
 1.
 <img width="251" alt="스크린샷 2023-03-23 오후 10 28 34" src="https://user-images.githubusercontent.com/48478079/227219065-8616ab9e-636c-4e57-9bc8-c27c233aecf1.png">   
 
@@ -68,7 +64,7 @@ id가 자동으로 삽입되어 있습니다.
 <img width="527" alt="스크린샷 2023-03-24 오전 10 40 04" src="https://user-images.githubusercontent.com/48478079/227402957-5ed2f37d-8280-4007-b784-1eabffe16dea.png">
 
 위의 이미지에서 ```Type a query: { field :'value' } ``` 부분에 원하는 쿼리를 입력합니다. 다음과 같이 한번 시도해 봅시다. 
-``` {rating:7} ```  한 개의 데이터가 검색됩니다.      
+``` {rating:8} ```  한 개의 데이터가 검색됩니다.      
 
 
 
@@ -81,7 +77,16 @@ id가 자동으로 삽입되어 있습니다.
 
 <img width="171" alt="스크린샷 2023-03-24 오전 11 15 00" src="https://user-images.githubusercontent.com/48478079/227407106-a78c2c37-6adc-499c-9186-5fb3f160021a.png">
 
-여기서도 같은 명령어를 시도해 봅니다. 결과는 동일합니다.   이렇게해서 우리는 3가지 방법으로 실행하는 것을 경험했습니다.   
+여기서도 같은 명령어를 시도해보세요 잠시 시간을 드리겠습니다     
+
+```js
+test>use bookstore
+bookstore>db.books.find({ rating:8 })
+결과출력
+```
+
+
+이렇게해서 우리는 3가지 방법으로 실행하는 것을 경험했습니다.   
 
 
 

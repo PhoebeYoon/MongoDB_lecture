@@ -26,6 +26,9 @@ Export collection 클릭
 <img width="400" alt="스크린샷 2023-04-29 오후 1 31 20" src="https://user-images.githubusercontent.com/48478079/235283497-f2ed94d9-fff3-4b8e-845b-95fcb88dffc9.png">
 
 
+:cactus: bookstore 디비에 bank라는 컬렉션을 만들고 첨부된 데이터를 삽입합니다.  
+
+
 ## shell 에서 document 삭제
 ### 1개의 문서를 삭제 
 ``` 

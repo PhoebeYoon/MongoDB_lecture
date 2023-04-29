@@ -93,7 +93,8 @@ async function run(){
 
 실행되었다면 터미널에 아래와 같이 나옵니다.     
 <img width="300" alt="스크린샷 2023-04-09 오후 3 39 14" src="https://user-images.githubusercontent.com/48478079/230758480-fea999a7-7e65-4801-92e1-2d162c026de4.png">     
-여기에 있는 _v는_ mongoose가 트래킹하는 정보(versioning) 이니까 우리는 신경쓰지 않아도 됩니다.  
+여기에 있는 _v는_ mongoose가 트래킹하는 정보(versioning) 이니까 우리는 신경쓰지 않아도 됩니다.   
+compass에서 'Kang'이 보이지 않는다면 디비 접속을 끊었다가 다시 연결하면 보일것입니다.  
 
 10. 9번에 내용중 새로운 user를 생성하는 다른 방법은 create() 이용하는 것입니다.   
 ``` js

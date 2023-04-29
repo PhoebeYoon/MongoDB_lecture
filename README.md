@@ -2,7 +2,7 @@
 
 
 
-## index 연습을 위해 
+### 1. index 연습을 위해 
 store라는 컬렉션을 생성하고 아래의 데이터를 입력하세요.  
 
 ```
@@ -34,6 +34,23 @@ db.stores.find(
 세개의 단어, java hut coffee라는 단어가 첫번째 출력내용에서는 모두 포함되어 있어서 가장 높은 값을 얻었고, 2번째 결가물은 coffee가 2개 있어서, 3번째는 java 라는 1개의 단어만 발견되기 때문에 가장 낮은 점수를 받았다고 생각하면 된다.  
 
 모든 단어가 들어가 있는 경우 4점이 나온다.  
+
+### 2. 한글이 들어간 내용을 검색 
+첨부된 파일을 다운로드 받아 restaurant 컬렉션을 만들고 데이터를 삽입합니다.   
+
+```
+db.restaurant.find()
+db.restaurant.createIndex({"shop_name":"text", "menu":"text"})
+db.restaurant.getIndexes()
+db.restaurant.find({$text: { $search:"버거킹"}})
+
+db.restaurant.find({$text: { $search:"콜라 와퍼"}})  <-- "콜라 와퍼가 포함되지 않은 것도 검색됩니다.
+( 이유는 한글검색에는 구분자 기반(공백문자) 기준으로 인덱싱하기 때문입니다 )
+
+( 그래서 입력한 문장 자체를 포함한 것을 찾을 땐 \"검색어\" 으로 해야 합니다)
+db.restaurant.find({$text: { $search:" \"콜라 와퍼\" "}})
+
+```
 
 
 

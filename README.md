@@ -45,3 +45,29 @@ totalDocsExamined 항목을 보면 차이가 있다.
 ``` 
 db.books.dropIndex({rating:8})
 ```
+
+## $text에 대해 알아보겠습니다.  
+MongoDB는 문자열 내용에 대한 텍스트 검색 쿼리를 지원하는 텍스트 색인을 제공합니다
+find에서 많이 사용하는 것중에 $text가 있는데 이것은 인덱스로 접근해야 하기 때문에 이번에 살펴보겠습니다.     
+우선 인덱스를 생성해야 합니다.  
+
+$search // 검색에 사용할 키워드 조건
+
+``` 
+bookstore>db.books.createIndex( { author:"text" })
+bookstore>db.books.find({ $text: { $search :"Patric"})
+bookstore>db.books.find({ $text: { $search :"patric"})
+```
+결과를 확인하세요  
+
+만들어진 인덱스를 확인하고, 삭제해 보겠습니다. 
+
+``` 
+bookstore>db.books.getIndexes()
+bookstore>db.books.dropIndex('위에서 보여준 인덱스 이름')
+
+
+```
+
+
+

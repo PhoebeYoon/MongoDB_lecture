@@ -23,7 +23,7 @@ Export collection 클릭
 2. 'ADD DATA; > Import JSON or CSV file > 파일선택 > 결과를 확인합니다.
 
 
-<img width="400" alt="스크린샷 2023-04-29 오후 1 31 20" src="https://user-images.githubusercontent.com/48478079/235283497-f2ed94d9-fff3-4b8e-845b-95fcb88dffc9.png">
+<img width="500" alt="스크린샷 2023-04-29 오후 1 31 20" src="https://user-images.githubusercontent.com/48478079/235283497-f2ed94d9-fff3-4b8e-845b-95fcb88dffc9.png">
 
 
 :cactus: bookstore 디비에 bank라는 컬렉션을 만들고 첨부된 데이터를 삽입합니다.  
@@ -49,7 +49,8 @@ id값은 기존내용중 아무거나 선택해서 사용합니다.
 
 
 아래 예제의 실습을 위해 아까 삽입했던 bank의 내용을 한번더 복사해서 삽입한뒤 내용을 편집합니다.  
-새로운 필드를 추가할때는 왼쪽의 :heavy_plus_sign:를 클릭해서 'Insurance', 400을 입력합니다.  
+이름을 임의대로 바꾸고 'insurance'라는 필드도 만듭니다.   
+새로운 필드를 추가할때는 왼쪽의 :heavy_plus_sign:를 클릭해서 'Insurance', 400을 입력합니다.   
 <img width="204" alt="스크린샷 2023-04-29 오후 1 48 52" src="https://user-images.githubusercontent.com/48478079/235284102-26e15b1c-d68c-48e1-bdb4-85a49eed397c.png">
 
 

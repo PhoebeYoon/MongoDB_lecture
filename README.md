@@ -47,6 +47,13 @@ id값은 기존내용중 아무거나 선택해서 사용합니다.
 성공했다면 
 ``` { acknowledged: true, deletedCount: 2 } ``` 출력됩니다.  
 
+
+아래 예제의 실습을 위해 아까 삽입했던 bank의 내용을 한번더 복사해서 삽입한뒤 내용을 편집합니다.  
+새로운 필드를 추가할때는 왼쪽의 :heavy_plus_sign:를 클릭해서 'Insurance', 400을 입력합니다.  
+<img width="204" alt="스크린샷 2023-04-29 오후 1 48 52" src="https://user-images.githubusercontent.com/48478079/235284102-26e15b1c-d68c-48e1-bdb4-85a49eed397c.png">
+
+
+
 ```
 bookstore> db.bank.deleteOne({name:"Smith"})
 bookstore> db.bank.deleteMany({insurance : {$exists:true}}) - insurance 필드만 있고 나머지 내용이 없다면 이렇게 삭제해봅시다 

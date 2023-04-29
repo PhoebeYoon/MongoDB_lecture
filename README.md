@@ -122,6 +122,6 @@ bookstore> db.bank.updateMany( {}, { $rename: { 'Fullname': "name" } })
 ```
 
 ### countDocuments
-db.books.countDocuments({'rating':{ $gt:8}}) 
+
 
 

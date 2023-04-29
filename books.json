@@ -1,0 +1,228 @@
+[{
+  "_id": {
+    "$oid": "641c55934b4ae7c5cd55f795"
+  },
+  "title": "Name of Wind",
+  "author": "Patric Rothfus",
+  "pages": 500,
+  "genres": [
+    "fantasy",
+    "magical"
+  ],
+  "rating": 9
+},{
+  "_id": {
+    "$oid": "641c5c4a4b4ae7c5cd55f79a"
+  },
+  "title": "Someone Else’s Shoes",
+  "author": "Jojo Moyes",
+  "pages": 432,
+  "genres": [
+    "fantasy",
+    "dystopian"
+  ],
+  "rating": 9
+},{
+  "_id": {
+    "$oid": "641c5c6f4b4ae7c5cd55f79c"
+  },
+  "title": "In Case of Emergency",
+  "author": "Poorna Bell",
+  "pages": 298,
+  "genres": [
+    "fantasy",
+    "fairy tale"
+  ],
+  "rating": 9
+},{
+  "_id": {
+    "$oid": "641c5c7b4b4ae7c5cd55f79e"
+  },
+  "title": "Moonlight",
+  "author": "Guy de Maupassant",
+  "pages": 160,
+  "genres": [
+    "historical fiction",
+    "fiction"
+  ],
+  "rating": 9
+},{
+  "_id": {
+    "$oid": "641cf862ff8108ca0aa5d823"
+  },
+  "title": "The Secrets of Hartwood Hall",
+  "author": "Katie Lumsden",
+  "pages": 230,
+  "genres": [
+    "historical fiction",
+    "fiction"
+  ],
+  "rating": 7
+},{
+  "_id": {
+    "$oid": "641cf8a5ff8108ca0aa5d825"
+  },
+  "title": "The Boy, The Mole, The Fox and The Horse",
+  "author": "Charlie Mackesy",
+  "pages": 128,
+  "genres": [
+    "fiction"
+  ],
+  "rating": 8
+},{
+  "_id": {
+    "$oid": "641cfb6fff8108ca0aa5d827"
+  },
+  "title": "Divine Comedy",
+  "author": "Dante",
+  "copies": 1
+},{
+  "_id": {
+    "$oid": "641cfb6fff8108ca0aa5d828"
+  },
+  "title": "The Odyssey",
+  "author": "Homer",
+  "copies": 10
+},{
+  "_id": {
+    "$oid": "641cfb6fff8108ca0aa5d829"
+  },
+  "title": "Eclogues",
+  "author": "Dante",
+  "copies": 2
+},{
+  "_id": {
+    "$oid": "641cfb6fff8108ca0aa5d82a"
+  },
+  "title": "The Banquet",
+  "author": "Dante",
+  "copies": 2
+},{
+  "_id": {
+    "$oid": "641cfceaff8108ca0aa5d82c"
+  },
+  "title": "Great Circle",
+  "author": "Maggie shipstead",
+  "pages": 390,
+  "genres": [
+    "action",
+    "adventure",
+    "fiction"
+  ],
+  "rating": 8
+},{
+  "_id": {
+    "$oid": "641cfceaff8108ca0aa5d82d"
+  },
+  "title": "Outlander",
+  "author": "Diana Gabaldon",
+  "pages": 880,
+  "genres": [
+    "action",
+    "adventure"
+  ],
+  "rating": 6
+},{
+  "_id": {
+    "$oid": "641d0c33a0139faf66b2f990"
+  },
+  "title": "The Color of Magic",
+  "author": "Terry Pratchett",
+  "pages": 300,
+  "rating": 7,
+  "genres": [
+    "fantasy",
+    "magic"
+  ]
+},{
+  "_id": {
+    "$oid": "641d12cfa0139faf66b2f992"
+  },
+  "title": "The Light Fantastic",
+  "author": "Terry Pratchett",
+  "pages": 250,
+  "genres": [
+    "fantasy"
+  ],
+  "rating": 6
+},{
+  "_id": {
+    "$oid": "641d12cfa0139faf66b2f993"
+  },
+  "title": "Dune",
+  "author": "Frank Herbert",
+  "pages": 500,
+  "genres": [
+    "sci-sf",
+    "dystopian"
+  ],
+  "rating": 10
+},{
+  "_id": {
+    "$oid": "641d2b40a0139faf66b2f997"
+  },
+  "title": "The Final Empire",
+  "author": "Brandon Sanderson",
+  "pages": 450,
+  "genres": [
+    "fantasy",
+    "dystopian"
+  ],
+  "rating": 8
+},{
+  "_id": {
+    "$oid": "641d2c0d12e5a0ec4283ac98"
+  },
+  "title": "The way of King",
+  "author": "Brandon Sanderson",
+  "pages": 300,
+  "genres": [
+    "fantasy",
+    "dystopian"
+  ],
+  "rating": 9
+},{
+  "_id": {
+    "$oid": "641d434ea0139faf66b2f99a"
+  },
+  "title": "The name of the Wind",
+  "author": "Patrick Rothfuss",
+  "pages": 500,
+  "rating": 6,
+  "genres": [
+    "fantasy",
+    "magic"
+  ],
+  "reviews": [
+    {
+      "name": "kim",
+      "body": "one of my favs"
+    },
+    {
+      "name": "park",
+      "body": "really good book"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "641d434ea0139faf66b2f99b"
+  },
+  "title": "The name of the Wind",
+  "author": "Patrick Rothfuss",
+  "pages": 500,
+  "rating": 6,
+  "genres": [
+    "fantasy",
+    "magic"
+  ],
+  "reviews": [
+    {
+      "name": "kim",
+      "body": "one of my favs"
+    },
+    {
+      "name": "park",
+      "body": "really good book"
+    }
+  ]
+}]

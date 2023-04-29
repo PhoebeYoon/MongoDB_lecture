@@ -1,0 +1,39 @@
+[{
+  "title": "Munich",
+  "author": "Robert Harris",
+  "pages": 326,
+  "rating": 8,
+  "genres": [
+    "fantasy",
+    "magic"
+  ],
+  "reviews": [
+    {
+      "name": "Joe",
+      "body": "i like it"
+    },
+    {
+      "name": "park",
+      "body": "really good book"
+    }
+  ]
+},{
+  "title": "Act of Oblivion",
+  "author": "Robert Harris",
+  "pages": 400,
+  "rating": 8,
+  "genres": [
+    "fiction",
+    "magic"
+  ],
+  "reviews": [
+    {
+      "name": "Smith",
+      "body": "one of my favs"
+    },
+    {
+      "name": "Hong",
+      "body": "really good book"
+    }
+  ]
+}]

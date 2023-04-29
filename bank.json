@@ -1,0 +1,9 @@
+[{
+  "name": "Tom",
+  "balance": 100,
+  "debt": 200
+},{
+  "name": "Smith",
+  "balance": 90,
+  "debt": 30
+}]

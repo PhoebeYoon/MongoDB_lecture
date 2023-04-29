@@ -1,9 +1,12 @@
 ###### :cactus:  MongoDB_lecture
 
+
+
+
 ## Nested documents 의 형태는, 
 ``` json
 {
-  "_id" : ObjectId("ai5eg8H9Pj12"),
+
   "title": "Dune",
   "author": "Frank Herbert",
   "pages": 500,

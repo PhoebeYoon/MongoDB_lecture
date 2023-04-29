@@ -5,18 +5,26 @@ MongoDB compass에서 collection를 export한뒤에 import도 해 봅시다.
 
 1. 
 <img width="323" alt="스크린샷 2023-03-24 오후 6 16 29" src="https://user-images.githubusercontent.com/48478079/227476954-306ba41d-0380-4fa6-8acf-1f4cb957f911.png">     
+filter 항목에 rating이 7보다 큰 documents만 검색하세요  
+
 Export collection 클릭  
 
 2.     
 <img width="323" alt="스크린샷 2023-03-24 오후 6 19 39" src="https://user-images.githubusercontent.com/48478079/227477576-90cbe789-66e2-4941-bd09-3d864a2a266d.png">    
 
-``` Select Fields ``` 를 클릭하면 field를 선택할 수 있습니다 ``` Export Full Collection ```를 클릭합니다.   
+``` Export query with filters ```를 클릭합니다.      ``` Select Fields ``` 를 클릭하면 field를 선택할 수 있습니다  
 
-3.``` Export File Type ``` 에서 ``` JSON | CSV ``` 중 하나를 선택하면 됩니다. 우리는 ```JSON```를 선택하고 ``` Select a file...```  에서 저장할 위치를 지정하고 ``` Export ```를 클릭합니다. 
+3. Select Output 선택  
+4.``` Export File Type ``` 에서 ``` JSON | CSV ``` 중 하나를 선택하면 됩니다. 우리는 ```CSV```를 선택하고 ``` Select a file...```  에서 저장할 위치를 지정하고 ``` Export ```를 클릭합니다. 
 
 ## import data  
-첨부된 book2.json 파일을 import 해봅시다.   
-<img width="257" alt="스크린샷 2023-03-24 오후 6 37 31" src="https://user-images.githubusercontent.com/48478079/227482842-66c0120f-dc17-4eea-a623-e383fda0e327.png">
+첨부된 book2.csv파일을 import 해봅시다.   (위의 예제에서 export할때 저장하는 이름을 book2.csv )
+1. mydb데이터베이스에 inventory라는 컬렉션이 있다면 선택합니다. 
+2. 'ADD DATA; > Import JSON or CSV file > 파일선택 > 결과를 확인합니다.
+
+
+<img width="400" alt="스크린샷 2023-04-29 오후 1 31 20" src="https://user-images.githubusercontent.com/48478079/235283497-f2ed94d9-fff3-4b8e-845b-95fcb88dffc9.png">
+
 
 ## shell 에서 document 삭제
 ### 1개의 문서를 삭제 

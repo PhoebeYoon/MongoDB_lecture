@@ -98,7 +98,4 @@ bookstore> db.books.find({title :{$regex:/The odyssey [1-3]/i,$not:/The Odyssey 
 📝 참조)
 https://www.mongodb.com/docs/manual/reference/method/db.collection.find/
 
-## 배열에서 사용하는 요소찾기
-- $elemMatch 
-
 

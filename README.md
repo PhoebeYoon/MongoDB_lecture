@@ -70,7 +70,8 @@ async function run(){
 <img width="360" alt="스크린샷 2023-04-09 오후 8 03 57" src="https://user-images.githubusercontent.com/48478079/230768831-4c26d19c-081b-4ec0-965f-7b7f2c99f5ee.png">
 
 13. 이제 찾기( findById)를 사용해보도록 하겠습니다.    
-기존 내용을 주석처리하고 아래 내용을 입력합니다. 그리고 기존 문서중에서 아무 _id를 복사해서 넣어주세요 
+기존 내용을 주석처리하고 아래 내용을 입력합니다. 그리고 기존 문서중에서 아무 _id를 복사해서 넣어주세요   
+
 [script.js]   
 ```js
 const mongoose = require('mongoose')

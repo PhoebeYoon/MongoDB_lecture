@@ -46,6 +46,10 @@ db.컬렉션.find({필드 : {$regex: 정규표현식}})
 
 
 :trophy: 첨부되어 있던 데이터를 books 컬렉션에 삽입하세요  
+compass에 디비를 연결 > books 컬렉션 선택 > "ADD DATA"클릭 > 드롭다운 메뉴에서 "Import JSON or CSV file" > 해당 파일 선택   
+또는  드룹다운 메뉴에서 "Insert document" 선택 > 데이터 입력
+
+
 ```  
 ( javascript의 사용했던 표현입니다 )
 

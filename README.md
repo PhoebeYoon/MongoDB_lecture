@@ -7,11 +7,11 @@ store라는 컬렉션을 생성하고 아래의 데이터를 입력하세요.
 
 ```
 [
-     { _id: 1, name: "Java Hut", description: "Coffee and cakes" },
-     { _id: 2, name: "Burger Buns", description: "Gourmet hamburgers" },
-     { _id: 3, name: "Coffee Shop", description: "Just coffee" },
-     { _id: 4, name: "Clothes Clothes Clothes", description: "Discount clothing" },
-     { _id: 5, name: "Java Shopping", description: "Indonesian goods" }
+     { name: "Java Hut", description: "Coffee and cakes" },
+     { name: "Burger Buns", description: "Gourmet hamburgers" },
+     { name: "Coffee Shop", description: "Just coffee" },
+     { name: "Clothes Clothes Clothes", description: "Discount clothing" },
+     { name: "Java Shopping", description: "Indonesian goods" }
    ]
 
 ```  

@@ -1,5 +1,14 @@
 ###### :cactus:  MongoDB_lecture
 
+## 배열에서 사용하는 요소찾기    
+첨부된 파일을 다운로드 하여 shools 컬렉션을 만들고 데이터를 삽입한 후 아래의 예제를 실행합니다.  
+
+- $elemMatch 
+```js
+db.schools.find({zipcode:"63109"},{ students: {$elemMatch:{school:102}} })
+db.school.find({zipcode:"63109"},{ students: {$elemMatch:{school:102, age:{ $gt:10}}} })
+
+```
 
 
 

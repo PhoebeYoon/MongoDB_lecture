@@ -172,10 +172,13 @@ bookstore> db.books.find() <-- 컬렉션내 문서의 내용을 보고 싶으면
 - id는 자동으로 출력되므로 출력에서 제외하고 싶다면 false로 지정해야 한다
 
 ``` 
-bookstore> db.books.find({},{"title":1})  
+bookstore> db.books.find() <-- 모든 것을 보고자 할때
+bookstore> db.books.find({"title"}) <-- 특별한 조건없이 title 항목만 보고자할때 이렇게 주면 실행에러
+bookstore> db.books.find({},{"title":1})  <-- 여기서의 1는 true의 의미로 이고 0은 false를 의미
 bookstore> db.books.find({},{"title":1,"author":1}) 
 bookstore> db.books.find({},{"title":1,"author":1, _id:0})
 bookstore> db.books.find({},{"title":true,"author":true, _id:0})
+bookstore> db.books.find({},{title:true,author:true, _id:0})
 bookstore> db.books.find(
 ... {},
 ... { _id:0,

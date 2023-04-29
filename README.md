@@ -22,7 +22,7 @@ app.listen(3000, ()=>{
 })
 
 // 라우터
-app.get("/books",(req,res) =>{
+app.get("./books",(req,res) =>{
   res.json({msg : "welcome to the api"})
 })
 ``` 
@@ -79,7 +79,7 @@ connectToDb((err) =>{
   }
 })
 // 라우터
-app.get("/books",(req,res) =>{
+app.get("./books",(req,res) =>{
   res.json({msg : "welcome to the api"})
 })
 ```
@@ -138,10 +138,10 @@ app.get('/books', (req, res) => {
 - find()메소드는 결과를 반복하는데 사용할 수 있는 cursor object를 반환합니다 
 - cursor는 불러온 모든 레코드를 반환하는데 사용된 포인터입니다.  그래서 인덱스를 설정하고 갯수를 셀수 있습니다. 
 - cursor를 이용하여 불러온 내용을 읽을 수도 있습니다. 
-- 다음을 실행해 봅니다
+- 다음을  쉘로 실행해 봅니다
 ``` 
-use bookstore
-var cur=db.books.find() 
-cur.next() # 첫번째 document가 출력됩니다
-cur.next() # 두번째 document가 출력됩니다
+test>use bookstore
+bookstore>var cur=db.books.find() 
+bookstore>cur.next() # 첫번째 document가 출력됩니다
+bookstore>cur.next() # 두번째 document가 출력됩니다
 ``` 

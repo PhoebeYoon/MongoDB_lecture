@@ -63,7 +63,7 @@
    _id: ObjectId(7df78ad8902c),
    title: 'MongoDB Overview', 
    description: 'MongoDB is no sql database',
-   by: 'tutorials point',
+   by: 'from mongo',
    url: 'http://www.example.com',
    tags: ['mongodb', 'database', 'NoSQL'],
    likes: 100, 
@@ -91,14 +91,16 @@
 
 
 ```
-test> ObjectId("507f191e810c19729de860ea").toString()
 test> newObjectId = ObjectId(32)
 ObjectId("0000002038cd6fb5aad8043c") <-- 결과
+test>ObjectId(33) 
+ObjectId("0000002038cd6fb5aad804??") <-- 위 결과의 다음것이 출력
 ```    
 위의 내용를 살펴보면,   
 A four byte time stamp, 00000020 는 ObjectId의 처음 4바이트는 Unix epoch 이후의 second 수 이며,  00000020이며 16진수로는 32입니다.      
 그 다음 a five byte random element, f51bb4362e      
-나머지 three byte counter, ee2a4d     
+나머지 three byte counter, ee2a4d 이며 id의 값이 순차적으로 생성되는 것을 알 수 있습니다   
+
 
 ## MongoDB는 embedded 데이터모델과 정규화데이터모델의 2가지 유형의 데이터 모델을 제공한다. 
 1. embedded 모델은 관련데이터를 하나의 문서에 모두 포함하는 형태로 비정규화된 데이터 모형이다.

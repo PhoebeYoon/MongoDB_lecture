@@ -26,16 +26,16 @@ connectToDb((err) => {
 // routes
 app.get('/books', (req, res) => {
   
-  const page = req.query.p || 0 
-  const booksPerPage =3
+  const page = req.query.p || 0   // <-- 여기
+  const booksPerPage =3           // <-- 
 
   let books = []
 
   db.collection('books')
     .find()
     .sort({author: 1})
-    .skip(page*booksPerPage)
-    .limit(booksPerPage)
+    .skip(page*booksPerPage) // <-- 여기
+    .limit(booksPerPage)     // <-- 여기
     .forEach(book => books.push(book))
     .then(() => {
       res.status(200).json(books)
@@ -115,6 +115,9 @@ app.patch('/books/:id', (req, res) => {
 })
 
 ```
-하고 나서 postman에서 ``` ?p=0```, ``` ?p=1``` , ``` ?p=2``` 로 한 페이지가 3개의 문서가 나타난다.   
+하고 나서 postman에서 ``` http://localhost:3000/books?p=0```,  
+이어서 ``` ?p=1``` , 
+``` ?p=2``` 주면 각 페이지마다 3개의 문서가 나타난다. 처음실행문 get메서드에서는 모든 document들을 쭈욱, 전체를 보여주었지만 이런식으로 하면 한페이지당 몇개씩 보여주는 쿼리(query)를 만들 수 있습니다.  
+
 
 <img width="536" alt="스크린샷 2023-03-25 오후 12 09 38" src="https://user-images.githubusercontent.com/48478079/227688881-c666b3d0-c838-4c15-9f49-211ffae3a050.png">

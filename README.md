@@ -21,6 +21,17 @@
 15. Regular expression - 이 데이터 유형은 정규식을 저장하는 데 사용됩니다.   
 
 
+##### :walking: 데이터 타입을 이용한 작은 연습을 해보겠습니다  
+```
+test> var df = BinData(1,"123as3d")
+test> db.BinaryCollection.insert({_id:ObjectId(), comments:"This is am example", valueBinary:df })
+test> db.BinaryCollection.find()
+
+test>
+```
+
+여기서 BinData() - Creates a binary data object이며  사용된 BinaryCollection는 임의의 컬렉션이름입니다. 
+
 
 
 

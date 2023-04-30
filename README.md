@@ -49,8 +49,8 @@ C:\Program Files\MongoDB\Server\3.2\bin\ 에 설치됩니다.
 - mongoose는 몽고DB와 Express.js 웹 애플리케이션 프레임워크 간 연결을 생성하는 자바스크립트 객체 지향 프로그래밍 라이브러리이다.
 - POSTMAN (포스트맨은 개발자들이 API를 디자인하고 빌드하고 테스트하고 반복하기 위한 API 플랫폼 )
 
-
-과제 : freecodecamp : 
+#### :gift_heart: 각 요일 수업의 마지막 시간에는 테스트 진행됩니다  
+#### :gift_heart: 과제 : freecodecamp : 
 [ Moongo DB ]     
 <img width="400" alt="스크린샷 2023-04-06 오후 4 50 55" src="https://user-images.githubusercontent.com/48478079/230311317-99b1560c-3a67-466f-9887-6164a7eda3e3.png">
 

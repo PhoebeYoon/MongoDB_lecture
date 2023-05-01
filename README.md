@@ -28,7 +28,8 @@ test> db.BinaryCollection.insert({_id:ObjectId(), comments:"This is am example",
 test> db.BinaryCollection.find()
 ```
 
-여기서 BinData() - Creates a binary data object이며  사용된 BinaryCollection는 임의의 컬렉션이름입니다. 
+여기서 BinData() - Creates a binary data object이며  사용된 BinaryCollection는 임의의 컬렉션이름입니다.  
+BinData의 옵션은 링크 https://www.mongodb.com/docs/manual/reference/method/BinData/ 에서 찾아보세요  
 
 
 

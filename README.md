@@ -54,7 +54,11 @@ compass에 디비를 연결 > books 컬렉션 선택 > "ADD DATA"클릭 > 드롭
 ( javascript의 사용했던 표현입니다 )
 
 bookstore> db.books.find({ "reviews.name":{$regex:'Kim'}})  <-- Kim 대문자 K로 시작하는
-bookstore> db.books.find({ "reviews.name":{$regex:'Kim',"$options":'i'}})  <-- option를 추가해서 대소문자 구분없이 찾음
+
+
+                             # 형식 { <field>: { $regex: /pattern/, $options: '<options>' } }
+bookstore> db.books.find({ "reviews.name":{$regex:'Kim',"$options":'i'}})  <-- option를 추가해서 
+                                                                             대소문자 구분없이 찾음
 bookstore> db.books.find({ "reviews.name":/kim/i}) <-- 간단히 이렇게도 가능합니다.
 
 
@@ -87,7 +91,8 @@ bookstore> db.books.find({title :{$regex:/col/i} })
 }
 ```
 find() 명령으로 실습해봅니다. 그런데 Odyssey뒤에 한칸 공백 있는거 주의하세요 (위에서 공백도 삽입했으니까 )   
-```
+```.  
+bookstore> db.books.find({title :{$regex:/The Odyssey/} })
 bookstore> db.books.find({title :{$regex:/The Odyssey [1,3]/} })
 bookstore> db.books.find({title :{$regex:/The odyssey [1,3]/} })
 bookstore> db.books.find({title :{$regex:/The odyssey [1,3]/i} })

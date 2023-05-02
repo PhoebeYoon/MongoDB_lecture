@@ -126,4 +126,6 @@ bookstore> db.books.find({"reviews.body" : "one of my favs" })
 ###  countDocuments 
 ```
 bookstore> db.books.countDocuments({"reviews.name":"Hong"  })
-```
+```  
+조회할 수 있는 마지막 페이지를 계산하기 위해서는 모든 document의 갯수를 알아야 하는데 mongoose에서 제공하는 함수 countDocuments함수를 이용합니다.  
+

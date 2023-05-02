@@ -3,7 +3,10 @@
 ## 배열에서 사용하는 요소찾기    
 첨부된 파일을 다운로드 하여 shools 컬렉션을 만들고 데이터를 삽입한 후 아래의 예제를 실행합니다.  
 
-- $elemMatch 
+
+
+- $elemMatch  
+배열 필드가 포함된 문서를 지정된 모든 쿼리 기준과 일치하는 하나 이상의 요소와 일치시킵니다.    
 ```js
 db.schools.find({zipcode:"63109"},{ students: {$elemMatch:{school:102}} })
 db.school.find({zipcode:"63109"},{ students: {$elemMatch:{school:102, age:{ $gt:10}}} })

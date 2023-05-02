@@ -52,5 +52,6 @@ db.restaurant.find({$text: { $search:" \"콜라 와퍼\" "}})
 
 ```
 
-
+### 컬렉션 이름 바꾸기    
+db.원래 컬렉션이름.renameCollection(새로운 컬렉션이름)
 

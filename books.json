@@ -1,0 +1,190 @@
+[{
+
+  "title": "Name of Wind",
+  "author": "Patric Rothfus",
+  "pages": 500,
+  "genres": [
+    "fantasy",
+    "magical"
+  ],
+  "rating": 9
+},{
+
+  "title": "Someone Else’s Shoes",
+  "author": "Jojo Moyes",
+  "pages": 432,
+  "genres": [
+    "fantasy",
+    "dystopian"
+  ],
+  "rating": 9
+},{
+ 
+  "title": "In Case of Emergency",
+  "author": "Poorna Bell",
+  "pages": 298,
+  "genres": [
+    "fantasy",
+    "fairy tale"
+  ],
+  "rating": 9
+},{
+
+  "title": "Moonlight",
+  "author": "Guy de Maupassant",
+  "pages": 160,
+  "genres": [
+    "historical fiction",
+    "fiction"
+  ],
+  "rating": 9
+},{
+
+  "title": "The Secrets of Hartwood Hall",
+  "author": "Katie Lumsden",
+  "pages": 230,
+  "genres": [
+    "historical fiction",
+    "fiction"
+  ],
+  "rating": 7
+},{
+ 
+  "title": "The Boy, The Mole, The Fox and The Horse",
+  "author": "Charlie Mackesy",
+  "pages": 128,
+  "genres": [
+    "fiction"
+  ],
+  "rating": 8
+},{
+  
+  "title": "Divine Comedy",
+  "author": "Dante",
+  "copies": 1
+},{
+
+  "title": "The Odyssey",
+  "author": "Homer",
+  "copies": 10
+},{
+
+  "title": "Eclogues",
+  "author": "Dante",
+  "copies": 2
+},{
+  
+  "title": "The Banquet",
+  "author": "Dante",
+  "copies": 2
+},{
+  
+  "title": "Great Circle",
+  "author": "Maggie shipstead",
+  "pages": 390,
+  "genres": [
+    "action",
+    "adventure",
+    "fiction"
+  ],
+  "rating": 8
+},{
+  
+  "title": "Outlander",
+  "author": "Diana Gabaldon",
+  "pages": 880,
+  "genres": [
+    "action",
+    "adventure"
+  ],
+  "rating": 6
+},{
+ 
+  "title": "The Color of Magic",
+  "author": "Terry Pratchett",
+  "pages": 300,
+  "rating": 7,
+  "genres": [
+    "fantasy",
+    "magic"
+  ]
+},{
+  
+  "title": "The Light Fantastic",
+  "author": "Terry Pratchett",
+  "pages": 250,
+  "genres": [
+    "fantasy"
+  ],
+  "rating": 6
+},{
+  
+  "title": "Dune",
+  "author": "Frank Herbert",
+  "pages": 500,
+  "genres": [
+    "sci-sf",
+    "dystopian"
+  ],
+  "rating": 10
+},{
+ 
+  "title": "The Final Empire",
+  "author": "Brandon Sanderson",
+  "pages": 450,
+  "genres": [
+    "fantasy",
+    "dystopian"
+  ],
+  "rating": 8
+},{
+
+  "title": "The way of King",
+  "author": "Brandon Sanderson",
+  "pages": 300,
+  "genres": [
+    "fantasy",
+    "dystopian"
+  ],
+  "rating": 9
+},{
+
+  "title": "The name of the Wind",
+  "author": "Patrick Rothfuss",
+  "pages": 500,
+  "rating": 6,
+  "genres": [
+    "fantasy",
+    "magic"
+  ],
+  "reviews": [
+    {
+      "name": "kim",
+      "body": "one of my favs"
+    },
+    {
+      "name": "park",
+      "body": "really good book"
+    }
+  ]
+},{
+ 
+  "title": "The name of the Wind",
+  "author": "Patrick Rothfuss",
+  "pages": 500,
+  "rating": 6,
+  "genres": [
+    "fantasy",
+    "magic"
+  ],
+  "reviews": [
+    {
+      "name": "kim",
+      "body": "one of my favs"
+    },
+    {
+      "name": "park",
+      "body": "really good book"
+    }
+  ]
+}]

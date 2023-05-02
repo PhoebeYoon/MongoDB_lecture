@@ -152,8 +152,8 @@ bookstore> db.books.insertMany([{ "title": "The Light Fantastic", "author": "Ter
 :cookie: shell 에서 아래와 같이 여러줄에 거쳐서 내용을 입력할 수도 있습니다. ... (점3개) 나온다는 것 미리 숙지하시고요. 여러개 입력하니까 대괄호 들어갑니다. 이거 빠뜨리면 ' MongoInvalidArgumentError: Argument "docs" must be an array of documents' 라고 에러메시지 나옵니다. 
 ```
 bookstore> db.books.insertMany([ 엔터
-... { {"title": "Dune","author": "Frank Herbert", "pages": 500,"genres": ["sci-sf","dystopian"],"rating":10} ,
-...{ "title": "The Light Fantastic", "author": "Terry Pratchett", "pages": 250,"genres": [ "fantasy" ], "rating":6 }
+... {"title": "Dune","author": "Frank Herbert", "pages": 500,"genres": ["sci-sf","dystopian"],"rating":10} ,
+... { "title": "The Light Fantastic", "author": "Terry Pratchett", "pages": 250,"genres": [ "fantasy" ], "rating":6 }
 ... ])
 ```    
 데이터를 입력한 후에 MongoDB compass화면에서 Documents의 갯수에 차이가 나면 아래 이미지의 빨간 테두리안의 리플레시를 클릭합니다  

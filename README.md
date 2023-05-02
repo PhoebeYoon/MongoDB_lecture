@@ -1,7 +1,7 @@
 ###### :cactus:  MongoDB_lecture
 
 ## Document를 업데이트
-### shell에서 한개의 document를 업데이트 
+### shell에서 한개의 document를 업데이트 , $set
 업데이트는 뭘할지를 찾아서 어떻게 바꿀지를 적어야 합니다.   
 만약 pages:400 --> pages: 401로 변경하고자 한다면 
 ```

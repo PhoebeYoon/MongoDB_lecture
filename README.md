@@ -51,6 +51,7 @@ bookstore>db.books.dropIndex('위에서 보여준 인덱스 이름')
 
 ## explain  
 db.collection.explain() 메서드는 최적화 관련 내용인 queryPlanner와 server 정보를 보여준다.   
+( 즉 다양한 메서드의 쿼리 실행에 대한 정보를 반환하는 데 사용됩니다 )
 queryPlanner — 기본 모드입니다. 이 수준에서  winning plan에 대한 정보를 알려주는데, 이것에는 사용된 인덱스, 컬렉션 스캔이 필요한지 (COLLSCAN) 등이 포함됩니다.
 실행결과를 잘 보시면 서버에 대한 내용을 알 수 있습니다.
 

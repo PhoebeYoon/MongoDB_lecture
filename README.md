@@ -16,6 +16,24 @@ store라는 컬렉션을 생성하고 아래의 데이터를 입력하세요.
 
 ```  
 
+<b>$text</b> : 텍스트 색인으로 인덱싱된 필드의 내용에 대해 텍스트 검색을 수행합니다
+
+형식: 
+```
+{
+  $text:
+    {
+      $search: <string>,
+      $language: <string>,
+      $caseSensitive: <boolean>,
+      $diacriticSensitive: <boolean>
+    }
+}
+```
+<b>$search</b> : MongoDB가 구문 분석하고 텍스트 색인을 쿼리하는 데 사용하는 일련의 용어입니다. MongoDB는 구문으로 지정되지 않는 한 용어에 대한 논리적 OR 검색을 수행합니다
+
+
+
 아래의 명령을 실행해서 결과를 확인하세요  
 
 ```

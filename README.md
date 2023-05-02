@@ -121,7 +121,3 @@ bookstore> db.bank.updateMany({},{
 bookstore> db.bank.updateMany( {}, { $rename: { 'Fullname': "name" } })
 ```
 
-### countDocuments
-
-
-

@@ -9,7 +9,7 @@
 배열 필드가 포함된 문서를 지정된 모든 쿼리 기준과 일치하는 하나 이상의 요소와 일치시킵니다.    
 ```js
 db.schools.find({zipcode:"63109"},{ students: {$elemMatch:{school:102}} })
-db.school.find({zipcode:"63109"},{ students: {$elemMatch:{school:102, age:{ $gt:10}}} })
+db.schools.find({zipcode:"63109"},{ students: {$elemMatch:{school:102, age:{ $gt:10}}} })
 
 ```
 

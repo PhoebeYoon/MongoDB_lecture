@@ -12,7 +12,8 @@ bookstore> db.books.updateOne({pages:400},{$set: { pages:401 } }) - $set를 넣�
 이번에는 업데이트할 대상은 id로 찾고 rating의 숫자를 바꿔보겠습니다.  
 한개의 document를 변경할때는 updateOne() 와 특정필드의 변경을 위해 $set 연산자를 사용합니다. 
 ``` 
-bookstore> db.books.updateOne({ _id:ObjectId("641d72e412e5a0ec4283ac9e")},  {$set:{rating:8, pages:320}})
+bookstore> db.books.updateOne({ _id:ObjectId("641d72e412e5a0ec4283ac9e")},  
+                      {$set:{rating:8, pages:320}})
 ```   
 성공했다면 
 ```

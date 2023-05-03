@@ -57,5 +57,6 @@ id값은 기존내용중 아무거나 선택해서 사용합니다.
 
 ```
 bookstore> db.bank.deleteOne({name:"Smith"})
-bookstore> db.bank.deleteMany({insurance : {$exists:true}}) - insurance 필드만 있고 나머지 내용이 없다면 이렇게 삭제해봅시다 
+bookstore> db.bank.deleteMany({insurance : {$exists:true}}) - insurance 필드만 있고 
+                                            나머지 내용이 없다면 이렇게 삭제해봅시다 
 ```

@@ -36,7 +36,6 @@ $search // 검색에 사용할 키워드 조건
 ``` 
 bookstore>db.books.createIndex( { author:"text" })
 bookstore>db.books.find({ $text: { $search :"Patric"})
-bookstore>db.books.find({ $text: { $search :"patric"})
 ```
 결과를 확인하세요  
 
